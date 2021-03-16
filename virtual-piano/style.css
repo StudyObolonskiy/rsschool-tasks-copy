@@ -195,6 +195,9 @@ body {
 	cursor: pointer;
 	background-image: url("assets/svg/fullscreen-open.svg");
 }
+.openedfullscreen {
+	background-image: url("assets/svg/fullscreen-exit.svg");
+}
 .fullscreen:hover {
 	background-color: rgba(255, 255, 255, 0.5);
 }
