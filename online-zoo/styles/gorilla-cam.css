@@ -1,0 +1,8 @@
+@import "reset.css";
+@import "header.css";
+@import "panda-main.css";
+@import "footer.css";
+.donate__wrapper {
+  background: url(../assets/gorilla_bg.png) no-repeat center,  #333b41;
+  background-size: cover;
+}
