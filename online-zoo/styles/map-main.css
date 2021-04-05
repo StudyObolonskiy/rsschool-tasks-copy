@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.tooltip {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0 15px 10px;
+  width: 160px;
+  border: 1px solid black;
+  border-radius: 6px;    
+  background-color: white;
+  color: black;
+  visibility: hidden;
+  z-index: 1;
+  transition: all 0.1s ease-out;
+}
+.tooltip__title,
+.tooltip__hobitat,
+.tooltip__btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight:normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.tooltip__btn {
+  margin-top: 16px;
+  min-width: 135px;
+  text-align: center;
+  color: #4b9200;
+  background-color: #f1f3f2;
+  cursor: pointer;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -6%;
+  left: 50%;
+  margin-left: -30px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  transform: rotate(45deg);
+  background-color: white;
+}
+.map__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 104px;
+  background-color: #eaf7fe;
+  overflow: auto;
+}
+.map {
+  position: relative;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 1084px;
+}
+.unated-states {
+  position: absolute;
+  left: 13%;
+  top: 47.03%;
+}
+.los-angeles {
+  position: absolute;
+  left: 15.5%;
+  top: 52%;
+}
+.eagles {
+  position: absolute;
+  left: 8.75%;
+  top: 51.5%;
+}
+.top-eagle__img {
+  cursor: pointer;
+}
+.eagle__img {
+  position: absolute;
+  left: 60%;
+  top: 70%;
+  cursor: pointer;
+}
+.eagles__tooltip {
+  top: 130%;
+  left: -50%;
+}
+.eagles:hover .eagles__tooltip {
+  visibility: visible;
+}
+.eagles-marker {
+  position: absolute;
+  left: 100%;
+  top: -20%;
+}
+.eagles:active svg path {
+ fill: #f9804b;
+}
+.florida {
+  position: absolute;
+  left: 25.5%;
+  top: 56%;
+}
+.crocodile {
+  position: absolute;
+  left: 23%;
+  top: 58%;
+}
+.crocodile__img {
+  cursor: pointer;
+}
+.crocodile__tooltip {
+  top: 130%;
+  left: -25%;
+}
+.crocodile:hover .crocodile__tooltip {
+  visibility: visible;
+}
+.crodile-marker {
+  position: absolute;
+  left: 3%;
+  top: -150%;
+}
+.crocodile:active svg path {
+  fill: #f9804b;
+}
+.congo {
+  position: absolute;
+  left: 52%;
+  top: 68%;
+
+}
+.gorilla {
+  position: absolute;
+  left: 50%;
+  top: 70%;  
+}
+.gorilla__img {
+  cursor: pointer;
+}
+.gorilla__tooltip {
+  top: 110%;
+  left: -60%;
+}
+.gorilla:hover .gorilla__tooltip {
+  visibility: visible;
+}
+.gorilla-marker {
+  position: absolute;
+  left: 0;
+  top: -80%;
+}
+.gorilla:active svg path {
+  fill: #f9804b;
+}
+.china {
+  position: absolute;
+  right: 25%;
+  top: 52%;
+}
+.pandas-map {
+  position: absolute;
+  right: 21%;
+  top: 55%;
+}
+.pandas-map__img {
+  cursor: pointer;
+}
+.panda-map__img {
+  position: absolute;
+  right: 10%;
+  bottom: 120%;
+  cursor: pointer;
+}
+.pandas-map__tooltip {
+  top: 110%;
+  left: -60%;
+}
+.pandas-map:hover .pandas-map__tooltip {
+  visibility: visible;
+}
+.pandas-marker {
+  position: absolute;
+  right: -45%;
+  top: -40%;
+}
+.panda-marker {
+  position: absolute;
+  right: -50%;
+  top: -135%;
+}
+.pandas-map:active svg path {
+  fill: #f9804b;
+}
+.scale__btns {
+  align-self: flex-end;
+  margin-right: 40px;
+  margin-top: -43px;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+.plus__btn,
+.minus__btn {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.plus__btn {
+  margin-bottom: 10px;
+}
