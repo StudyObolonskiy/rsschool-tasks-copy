@@ -4,6 +4,12 @@ body {
   font-style: normal;
   font-weight: normal;
 }
+h1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 .zoo-cam__wrapper {
   display: flex;
   flex-direction: column;
