@@ -1,438 +1,191 @@
 @media (max-width: 1500px) {
-  
-  .content__wrapper {
-    max-width: 940px;
+
+  .map__wrapper {
+    padding-top: 90px;
+    padding-bottom: 39px;
   }
-  .favorite__sublayer {
-    margin-top: 0;
-    margin-bottom: 40px;
-    padding-top: 43px;
-    padding-left: 58px;
-    background-position:  top -15px left;
-    background-size: 367px 367px
+  .map {
+    width: 938px;
   }
-  .favorite__title {
-    max-width: 400px;
-    font-size: 85px;
-    line-height: 64px;
+  .map__img {
+    width: 938px;
   }
-  .favorite__btn {
-    margin-top: 0;
-    margin-bottom: 47px;
-    margin-right: 40px;
+  .area {
+    font-size: 12px;
+    line-height: 16px;
   }
-  .backstage__wrapper {
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 142px;
-    background: #fff
+  .los-angeles {
+    top: 54%;
   }
-  .backstage__img {
-    position: relative;
-    width: 455px;
-    height: 408px;
-    overflow: hidden;
+  .marker svg{
+    width: 22px;
+    height: 27px;
   }
-  .backstage__img img {
-    position: absolute;
-    top: 0;
-    left: -15%;
+  .animal {
+    transform: scale(0.9);
   }
-  .backstage__descr {
-    margin-left: 30px;
-    max-width: 454px;
+  .eagles-marker {
+    left: 97%;
+    top: 0%;
   }
-  .backstage__title {
-    margin-bottom: 23px;
+  .crodile-marker {
+    top: -118%;
   }
-  .pets__slider {
-    max-width: 940px;
+  .gorilla-marker {
+    top: -70%;
   }
-  .pets__card {
-    width: 294px;
-    height: 354px;
+  .pandas-marker {
+    right: -25%;
+    top: -30%;
   }
-  .pets__card__wrapper {
-    margin-bottom: 92px;
+  .panda-marker {
+    right: -43%;
+    top: -114%;
   }
-  .arrow-left__btn {
-    top: 369px;
-    left: 323px
-  }
-  .arrow-right__btn {
-    top: 369px;
-    right: 323px;
-  }
-  .pets__btn {
-    margin-bottom: 140px;
-  }
-  .pets__wrapper {
-    background: url(../assets/palm-1000.png) no-repeat left bottom, url(../assets/strelitzia-1000.png) no-repeat right bottom, #fff;
-  }
-  .pick__wrapper {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-  .pick__title {
-    margin-top: 30px;
+  .scale__btns {
     margin-bottom: 20px;
-  }
-  .pick__subtitle {
-    margin-bottom: 20px;
-    margin-left: 49px
-  }
-  .pick__descr {
-    margin-left: 49px;
-    max-width: 813px;
-  }
-  .pick__notation {
-    max-width: 813px;
-    margin-left: 49px;
-  }
-  .pick__scheme__title {
-    margin-top: 40px;
-  }
-  .pick__btn {
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-  .testimonials__wrapper {
-    background: #fff url(../assets/leav-1000.png) no-repeat right bottom;
-    padding-top: 100px;
-    padding-bottom: 140px;
-  }
-  .testimonials {
-    overflow: hidden;
-  }
-  .testimonials__cards {
-    margin-top: 30px;
-  }
-  .testimonials__card {
-    width: 287px;
-    height: 386px;
-    padding: 15px 22px 18px 16px;
-    background: #f1f3f2;
-    border-radius: 18px;
-  }
-  .testimonials__btn {
-    margin-top: 20px;
-  }
+    margin-right: 20px;
+  }  
 
 }
-
 @media (max-width: 990px) {
-  
-  .content__wrapper {
-    max-width: 600px;
+
+  .map__wrapper {
+    padding-top: 57px;
+    padding-bottom: 26px;
   }
-  .favorite__sublayer {
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding-top: 38px;
-    padding-left: 37px;
-    background-position:  top left;
-    background-size: 238px 238px
+  .map {
+    width: 594px;
   }
-  .favorite__title {
-    font-size: 54px;
-    line-height: 41px;
-    max-width: 256px;
+  .map__img {
+    width: 594px;
   }
-  .favorite__btn {
-    margin-bottom: 40px;
-    align-self: flex-start;
+  .area {
+    font-size: 8px;
+    line-height: 10px;
   }
-  .backstage__wrapper {
-    padding-top: 60px;
-    padding-bottom: 80px;
-    background: url(../assets/flower-mobile.png) no-repeat right 30px, #fff;
+  .los-angeles {
+    top: 52%;
   }
-  .backstage__img {
+  .marker svg{
+    width: 14px;
+    height: 17px;
+  }
+  .animal {
+    transform: scale(0.57);
+  }
+  .eagles {
+    left: 6.75%;
+    top: 48.5%;
+  }
+  .eagle__img {
+    left: 36%;
+    top: 60%;
+  }
+  .eagles-marker {
+    left: 85%;
+    top: 20%;
+  }
+  .crocodile {
+    left: 20%;
+  }
+  .crodile-marker {
+    top: -63%;
+    left: 27%;
+  }
+  .gorilla {
+    left: 48%;
+    top: 69%;
+  }
+  .gorilla-marker {
+    top: -31%;
+    left: 24%;
+  }
+  .pandas-map {
+    right: 20%;
+    top: 53%;
+  }
+  .panda-map__img {
+    bottom: 70%;
+  }
+  .pandas-marker {
+    right: 0%;
+    top: 0%;
+  }
+  .panda-marker {
+    right: -13%;
+    top: -53%;
+  }
+  .scale__btns {
     display: none;
-  }
-  .backstage__descr {
-    margin-left: 0;
-    max-width: 495px;
-  }
-  .backstage__subtitle {
-    margin-bottom: 30px;
-  }
-  .how-work__title {
-    margin-bottom: 20px;
-  }
-  .pets__wrapper {
-    background: url(../assets/palm-640.png) no-repeat left bottom, url(../assets/strelitzia-640.png) no-repeat right bottom, #fff;
-  }
-  .pets__slider {
-    max-width: 600px;
-    overflow: hidden;
-  }
-  .pets__card {
-    width: 285px;
-    height: 332px;
-    margin-right: 29px;
-  }
-  .arrow-left__btn {
-    top: 347px;
-    left: 223px
-  }
-  .arrow-right__btn {
-    top: 347px;
-    right: 223px;
-  }
-  .pets__btn {
-    margin-top: 60px;
-    margin-bottom: 100px;
-  }
-  .pick__wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .pick__wrapper .content__wrapper {
-    max-width: 640px;
-  }
-  .pick__title {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 42px;
-  line-height: 50px;
-  }
-  .pick__subtitle {
-    margin-bottom: 20px;
-    margin-left: 20px;
-    font-size: 22px;
-    line-height: 26px;
-  }
-  .pick__descr {
-    margin-left: 20px;
-  }
-  .pick__notation {
-    max-width: 600px;
-    margin-left: 20px;
-  }
-  .pick__scheme__title {
-    margin-top: 30px;
-  }
-  .pick__scheme {
-    position: relative;
-    margin-top: 20px;
-  }
-  .pick__scheme__item {
-    margin-right: 42px;
-  }
-  .pick__scheme__item:last-child {
-    margin-right: 0;
-  }
-  .scheme__arrow {
-    display: none;
-  }
-  .scheme__arrow_mob {
-    display: flex;
-    position: absolute;
-    top: -7%;
-  }
-  .scheme__arrow_mob.first{
-    left: 23%;
-  }
-  .scheme__arrow_mob.second{
-    left: 58.75%;
-  }
-  .pick__btn {
-    margin-top: 40px;
-    margin-bottom: 60px;
-  }
-  .testimonials__wrapper {
-    background: url(../assets/leav-640.png) no-repeat right bottom, #fff;
-    padding-top: 60px;
-    padding-bottom: 90px;
-  }
-  .testimonials {
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .testimonials__cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 30px;
-    max-height: 360px;
-    overflow: hidden;
-  }
-  .testimonials__card__bg {  
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-  .testimonials__card__bg:last-child {
-    margin-bottom: 0;
-  }
-  .testimonials__card {
-    width: 584px;
-    height: 103px;
-    padding: 13px 29px 8px 12px;
-  }
-  .testimonials__progress {
-    display: none;
-  }
-  .testimonials__btn {
-    margin-top: 40px;
   }
 
 }
 @media (max-width: 630px) {
-  .content__wrapper {
-    max-width: 300px;
+
+  .map__wrapper {
+    padding-top: 39px;
+    padding-bottom: 18px;
   }
-  .favorite__sublayer {
-    margin-top: 22px;
-    margin-bottom: 43px;
-    padding-top: 19px;
-    padding-left: 19px;
-    background-position:  top left;
-    background-size: 119px 119px
+  .map {
+    width: 406px;
+    margin-left: 35px;
   }
-  .favorite__title {
-    max-width: 129px;
-    font-size: 28px;
-    line-height: 21px;
+  .map__img {
+    width: 406px;
   }
-  .favorite {
-    position: relative;
+  .area {
+    font-size: 5.6px;
+    line-height: 7px;
   }
-  .favorite__btn {
-    position: absolute;
-    margin: 0;
-    bottom: -74px;
+  .marker svg{
+    width: 9.6px;
+    height: 12px;
   }
-  .backstage__wrapper {
-    padding-top: 104px;
-    padding-bottom: 40px;
-    background: url(../assets/flower-320.png) no-repeat right 30px, #fff;
+  .animal {
+    transform: scale(0.375);
   }
-  .backstage__descr {
-    max-width: 300px;
+  .eagles {
+    left: 5.5%;
+    top: 46.5%;
   }
-  .backstage__title {
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 10px;
+  .eagle__img {
+    left: 20%;
+    top: 45%;
   }
-  .backstage__subtitle {
-    margin-bottom: 20px;
+  .eagles-marker {
+    left: 70%;
   }
-  .how-work__title {
-    margin-bottom: 10px;
+  .crocodile {
+    left: 17%;
+    top: 56%;
   }
-  .pets__wrapper {
-    background: url(../assets/palm-320.png) no-repeat left bottom, url(../assets/strelitzia-320.png) no-repeat right bottom, #fff;
+  .crodile-marker {
+    top: -32%;
+    left: 34%;
   }
-  .pets__slider {
-    display: none;
+  .gorilla {
+    left: 46%;
+    top: 66%;
   }
-  .pets-mobile__wrapper {
-    display: block;
-    height: 1388px;
-    overflow: hidden;
+  .gorilla-marker {
+    top: -10%;
+    left: 35%;
   }
-  .pets__mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    max-width: 300px;
+  .pandas-map {
+    right: 19%;
+    top: 50%;
   }
-  .pets__card {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .panda-map__img {
+    bottom: 43%;
   }
-  .pets__card:last-child {
-    margin-bottom: 0;
+  .pandas-marker {
+    right: 15%;
+    top: 15%;
   }
-  .pets__btn {
-    margin-top: 20px;
-    margin-bottom: 60px;
-  }
-  .pick__wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .pick__wrapper .content__wrapper {
-    max-width: 300px;
-  }
-  .pick__title {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .pick__subtitle {
-    margin-bottom: 20px;
-    margin-left: 0;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-  }
-  .pick__descr {
-    display: none;
-  }
-  .pick__notation {
-    display: none;
-  }
-  .pick__scheme__title {
-    margin-top: 0;
-    align-self: center;
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .pick__scheme {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-self: center;
-    margin-top: 42px;
-  }
-  .pick__scheme__item {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .pick__scheme__item__title {
-    margin-top: 10px;
-  }
-  .scheme__arrow_mob {
-    transform: rotate(90deg);
-  }
-  .scheme__arrow_mob.first{
-    top: 25%;
-    left: 85%;
-  }
-  .scheme__arrow_mob.second{
-    left: 85%;
-    top: 59%;
-  }
-  .pick__btn {
-    margin-top: 30px;
-    margin-bottom: 40px;
-  }
-  .testimonials__wrapper {
-    background: #fff url(../assets/leav-320.png) no-repeat right bottom;
-    padding-top: 30px;
-    padding-bottom: 60px;
-  }
-  .testimonials__title {
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .testimonials__cards {
-    margin-top: 20px;
-  }
-  .testimonials__card {
-    width: 293px;
-    padding: 9px 12px 9px;
-  }
-  .testimonials__btn {
-    margin-top: 30px;
+  .panda-marker {
+    right: 0%;
+    top: -23%;
   }
 
 }

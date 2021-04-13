@@ -57,10 +57,12 @@ h1 {
   background-color: white;
 }
 .map__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-top: 104px;
+  padding-bottom: 121px;
   background-color: #eaf7fe;
   overflow: auto;
 }
@@ -169,8 +171,8 @@ h1 {
 }
 .china {
   position: absolute;
-  right: 25%;
-  top: 52%;
+  right: 26.5%;
+  top: 51%;
 }
 .pandas-map {
   position: absolute;
@@ -207,11 +209,11 @@ h1 {
   fill: #f9804b;
 }
 .scale__btns {
-  align-self: flex-end;
-  margin-right: 40px;
-  margin-top: -43px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   margin-bottom: 40px;
-  z-index: 1;
+  margin-right: 40px;
 }
 .plus__btn,
 .minus__btn {
@@ -221,6 +223,18 @@ h1 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.plus__btn:hover path,
+.minus__btn:hover path{
+  fill: #f9804b;
+}
+.plus__btn:active path,
+.minus__btn:active path{
+  fill: #4b9200;
+}
+.plus__btn:active,
+.minus__btn:active{
+  border: 1px solid #4b9200;
 }
 .plus__btn {
   margin-bottom: 10px;
