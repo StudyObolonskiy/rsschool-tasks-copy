@@ -1,191 +1,214 @@
 @media (max-width: 1500px) {
 
-  .map__wrapper {
-    padding-top: 90px;
-    padding-bottom: 39px;
+  .head-panda {
+    background: url(../assets/head-donat-panda.png) no-repeat top left 29%;
   }
-  .map {
-    width: 938px;
+  .donate {
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
-  .map__img {
-    width: 938px;
+  .donat__notation__descr {
+    margin-top: 30px;
   }
-  .area {
-    font-size: 12px;
-    line-height: 16px;
+  .feed-friend {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 46px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.52);
   }
-  .los-angeles {
-    top: 54%;
+  .feed-friend__subtitle {
+    margin-top: 10px;
   }
-  .marker svg{
-    width: 22px;
-    height: 27px;
+  .amount__scale {
+    width: 810px;
   }
-  .animal {
-    transform: scale(0.9);
+  .amount__item:nth-child(2) {
+    display: none;
   }
-  .eagles-marker {
-    left: 97%;
-    top: 0%;
+  .amount__scale__line {
+    width: 785px;
   }
-  .crodile-marker {
-    top: -118%;
+  .another-amount {
+    margin-top: 108px;
+    margin-left: 25px;
   }
-  .gorilla-marker {
-    top: -70%;
+  .amount__value {
+    left: -120%;
   }
-  .pandas-marker {
-    right: -25%;
-    top: -30%;
-  }
-  .panda-marker {
-    right: -43%;
-    top: -114%;
-  }
-  .scale__btns {
-    margin-bottom: 20px;
-    margin-right: 20px;
-  }  
 
 }
 @media (max-width: 990px) {
 
-  .map__wrapper {
-    padding-top: 57px;
-    padding-bottom: 26px;
+  .head-panda {
+    height: 335px;
+    background: url(../assets/head-donat-panda.png) no-repeat top left 35%;    
+    background-size: cover;
   }
-  .map {
-    width: 594px;
+  .donate {
+    padding-top: 30px;
+    padding-bottom: 46px;
   }
-  .map__img {
-    width: 594px;
+  .donat__notation__title {
+    font-size: 24px;
+    line-height: 29px;
   }
-  .area {
-    font-size: 8px;
-    line-height: 10px;
+  .donat__notation__descr {
+    margin-top: 20px;
   }
-  .los-angeles {
-    top: 52%;
+  .donate__info {
+    margin-top: 30px;
   }
-  .marker svg{
-    width: 14px;
-    height: 17px;
+  .feed-friend {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 31px;
   }
-  .animal {
-    transform: scale(0.57);
+  .feed-friend__subtitle {
+    margin-top: 20px;
+    text-align: center;
   }
-  .eagles {
-    left: 6.75%;
-    top: 48.5%;
+  .feed-friend__info {
+    margin-top: 50px;
   }
-  .eagle__img {
-    left: 36%;
-    top: 60%;
+  .amount__title {
+    margin-bottom: 7px;
+    margin-left: 10px;
   }
-  .eagles-marker {
-    left: 85%;
-    top: 20%;
+  .amount__scale {
+    width: 600px;
   }
-  .crocodile {
-    left: 20%;
-  }
-  .crodile-marker {
-    top: -63%;
-    left: 27%;
-  }
-  .gorilla {
-    left: 48%;
-    top: 69%;
-  }
-  .gorilla-marker {
-    top: -31%;
-    left: 24%;
-  }
-  .pandas-map {
-    right: 20%;
-    top: 53%;
-  }
-  .panda-map__img {
-    bottom: 70%;
-  }
-  .pandas-marker {
-    right: 0%;
-    top: 0%;
-  }
-  .panda-marker {
-    right: -13%;
-    top: -53%;
-  }
-  .scale__btns {
+  .amount__item:nth-child(2),
+  .amount__item:nth-child(3),
+  .amount__item:nth-child(4) {
     display: none;
+  }
+  .amount__scale__line {
+    width: 524px;
+  }
+  .another-amount {
+    margin-top: 88px;
+    margin-left: 10px;
+    width: 180px;
+    height: 42px;
+  }
+  .period {
+    margin-top: 41px;
+  }
+  .sign {
+    top: 11px;
+    right: 10px;
+  }
+  .feed-friend__btn {
+    margin-top: 30px;
+  }
+  .amount__value {
+    left: -165%;
   }
 
 }
 @media (max-width: 630px) {
 
-  .map__wrapper {
-    padding-top: 39px;
-    padding-bottom: 18px;
+  .head-panda {
+    height: 180px;
+    background-size: cover;
   }
-  .map {
-    width: 406px;
-    margin-left: 35px;
+  .donate {
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
-  .map__img {
-    width: 406px;
+  .donate__info {
+    font-size: 24px;
+    line-height: 29px;
   }
-  .area {
-    font-size: 5.6px;
-    line-height: 7px;
+  .feed-friend {
+    padding-bottom: 20px;
   }
-  .marker svg{
-    width: 9.6px;
+  .feed-friend__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .feed-friend__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .diet__animal img {
+    width: 160px;
+  }
+  .diet__count {
+    font-size: 40.6px;
+    line-height: 32px;
+  }
+  .diet {
+    margin-top: 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .diet__descr {
+    margin-top: 6px;
+    width: 89.6px;
+    font-size: 9px;
+    line-height: 13px;
+    text-align: center;
+    color: #333b41;
+  }
+  .marker {
+    width: 8px;
+    height: 8px;
+    margin: 73px 36px 0 6px;
+    background: url(../assets/x-icon.svg) no-repeat center;
+  }
+  .amount__scale {
+    width: 300px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .amount__scale__line {
+    width: 262px;
+    height: 1px;
+  }
+  .amount__item {
+    margin-right: 60px;
+  }
+  .point {
+    width: 6px;
+    height: 6px;
+  }
+  .point::before {
+    width: 12px;
     height: 12px;
   }
-  .animal {
-    transform: scale(0.375);
+  .point::after {
+    display: flex;
+    width: 20px;
+    height: 20px;
   }
-  .eagles {
-    left: 5.5%;
-    top: 46.5%;
+  .amount__btn:checked + .point::before {  
+    border: 1px solid #fe9013;
   }
-  .eagle__img {
-    left: 20%;
-    top: 45%;
+  .amount__btn:checked + .point::after {  
+    border: 1px solid #fe9013;
   }
-  .eagles-marker {
-    left: 70%;
+  .amount__value {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
   }
-  .crocodile {
-    left: 17%;
-    top: 56%;
+  .another-amount {
+    margin-top: 54px;
+    margin-left: 0;
+    width: 180px;
+    height: 42px;
   }
-  .crodile-marker {
-    top: -32%;
-    left: 34%;
+  .period {
+    margin-top: 30px;
   }
-  .gorilla {
-    left: 46%;
-    top: 66%;
-  }
-  .gorilla-marker {
-    top: -10%;
-    left: 35%;
-  }
-  .pandas-map {
-    right: 19%;
-    top: 50%;
-  }
-  .panda-map__img {
-    bottom: 43%;
-  }
-  .pandas-marker {
-    right: 15%;
-    top: 15%;
-  }
-  .panda-marker {
-    right: 0%;
-    top: -23%;
+  .feed-friend__note {
+    width: 301px;
   }
 
 }

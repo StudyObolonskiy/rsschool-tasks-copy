@@ -11,9 +11,7 @@ h1 {
   overflow: hidden;
 }
 .head-panda {
-  width: 100%;
-  height: 100%;
-  min-height: 390px;
+  height: 390px;
   background: url(../assets/head-donat-panda.png) no-repeat center;
   background-size: cover;
 }
@@ -107,7 +105,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 48px;
+  margin-top: 87px;
 }
 .amount__title {
   margin-bottom: 10px;
@@ -219,7 +217,6 @@ h1 {
   font-size: 22px;
   font-weight: 500;
   color: #929699;
-  /* background: url(../assets/sign.svg); */
 }
 
 .another-amount__field {

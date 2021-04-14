@@ -239,3 +239,194 @@ h1 {
 .plus__btn {
   margin-bottom: 10px;
 }
+@media (max-width: 1500px) {
+
+  .map__wrapper {
+    padding-top: 90px;
+    padding-bottom: 39px;
+  }
+  .map {
+    width: 938px;
+  }
+  .map__img {
+    width: 938px;
+  }
+  .area {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .los-angeles {
+    top: 54%;
+  }
+  .marker svg{
+    width: 22px;
+    height: 27px;
+  }
+  .animal {
+    transform: scale(0.9);
+  }
+  .eagles-marker {
+    left: 97%;
+    top: 0%;
+  }
+  .crodile-marker {
+    top: -118%;
+  }
+  .gorilla-marker {
+    top: -70%;
+  }
+  .pandas-marker {
+    right: -25%;
+    top: -30%;
+  }
+  .panda-marker {
+    right: -43%;
+    top: -114%;
+  }
+  .scale__btns {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }  
+
+}
+@media (max-width: 990px) {
+
+  .map__wrapper {
+    padding-top: 57px;
+    padding-bottom: 26px;
+  }
+  .map {
+    width: 594px;
+  }
+  .map__img {
+    width: 594px;
+  }
+  .area {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .los-angeles {
+    top: 52%;
+  }
+  .marker svg{
+    width: 14px;
+    height: 17px;
+  }
+  .animal {
+    transform: scale(0.57);
+  }
+  .eagles {
+    left: 6.75%;
+    top: 48.5%;
+  }
+  .eagle__img {
+    left: 36%;
+    top: 60%;
+  }
+  .eagles-marker {
+    left: 85%;
+    top: 20%;
+  }
+  .crocodile {
+    left: 20%;
+  }
+  .crodile-marker {
+    top: -63%;
+    left: 27%;
+  }
+  .gorilla {
+    left: 48%;
+    top: 69%;
+  }
+  .gorilla-marker {
+    top: -31%;
+    left: 24%;
+  }
+  .pandas-map {
+    right: 20%;
+    top: 53%;
+  }
+  .panda-map__img {
+    bottom: 70%;
+  }
+  .pandas-marker {
+    right: 0%;
+    top: 0%;
+  }
+  .panda-marker {
+    right: -13%;
+    top: -53%;
+  }
+  .scale__btns {
+    display: none;
+  }
+
+}
+@media (max-width: 630px) {
+
+  .map__wrapper {
+    padding-top: 39px;
+    padding-bottom: 18px;
+  }
+  .map {
+    width: 406px;
+    margin-left: 35px;
+  }
+  .map__img {
+    width: 406px;
+  }
+  .area {
+    font-size: 5.6px;
+    line-height: 7px;
+  }
+  .marker svg{
+    width: 9.6px;
+    height: 12px;
+  }
+  .animal {
+    transform: scale(0.375);
+  }
+  .eagles {
+    left: 5.5%;
+    top: 46.5%;
+  }
+  .eagle__img {
+    left: 20%;
+    top: 45%;
+  }
+  .eagles-marker {
+    left: 70%;
+  }
+  .crocodile {
+    left: 17%;
+    top: 56%;
+  }
+  .crodile-marker {
+    top: -32%;
+    left: 34%;
+  }
+  .gorilla {
+    left: 46%;
+    top: 66%;
+  }
+  .gorilla-marker {
+    top: -10%;
+    left: 35%;
+  }
+  .pandas-map {
+    right: 19%;
+    top: 50%;
+  }
+  .panda-map__img {
+    bottom: 43%;
+  }
+  .pandas-marker {
+    right: 15%;
+    top: 15%;
+  }
+  .panda-marker {
+    right: 0%;
+    top: -23%;
+  }
+
+}
