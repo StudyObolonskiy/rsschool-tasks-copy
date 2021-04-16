@@ -190,7 +190,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  margin-left: 86px;
+  margin-left: 172px;
 }
 .copypast p {
   margin-top: 10px;
@@ -213,6 +213,9 @@
   }
   .footer__nav__item {
     margin-right: 48px;
+  }
+  .copypast {
+    margin-left: 86px;
   }
 
 }

@@ -258,7 +258,7 @@ h1 {
   .los-angeles {
     top: 54%;
   }
-  .marker svg{
+  .animal-marker svg{
     width: 22px;
     height: 27px;
   }
@@ -308,7 +308,7 @@ h1 {
   .los-angeles {
     top: 52%;
   }
-  .marker svg{
+  .animal-marker svg{
     width: 14px;
     height: 17px;
   }
@@ -379,7 +379,7 @@ h1 {
     font-size: 5.6px;
     line-height: 7px;
   }
-  .marker svg{
+  .animal-marker svg{
     width: 9.6px;
     height: 12px;
   }

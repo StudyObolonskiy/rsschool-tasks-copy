@@ -15,16 +15,23 @@ header {
   justify-content: left;
   align-items: center;
 }
-.logo {
+.logo__link {  
   margin-right: 63px;
-  width: 100%;
-  max-width: 82px;
+}
+.logo {
+  width: 82px;
   height: 52px;
   display:flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #fff;
   border-radius: 2px;
+}
+.logo__img {
+  width: 71px;
+  height: 38px;
+  background: url(../assets/pet-logo.svg) no-repeat center;
+  background-size: cover;
 }
 .mobile__nav {
   display: none;
@@ -50,10 +57,10 @@ header {
 }
 .header__nav_active a {
   pointer-events: none;
-	color: #f9804b;
+	color: #fb8441;
 }
 .header__nav__item a:active {
-	color: #f9804b;
+	color: #fb8441;
 }
 @media (max-width: 1500px) {
   
@@ -79,9 +86,19 @@ header {
     height: 30px;
     max-width: 48px;
   }
-  .logo img {
-    width: 47px;
-    height: 29px;
+  .logo_active {
+    width: 66px;
+    height: 42px;
+    max-width: 66px;
+    border: 1px solid #fe9013;
+  }
+  .logo__img {
+    width: 46px;
+    height: 25px;
+  }
+  .logo__img_active {
+    background: url(../assets/pet-logo-active.svg) no-repeat center;
+    background-size: cover;
   }
   .header__nav {
     display: none;
@@ -114,25 +131,41 @@ header {
     transform: translate(0, -2px);
     background-color: #4b9200;
   }
+  .mobile__nav {
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
   .mobile__nav__item a {
     text-decoration: none;
     font-weight: 500;
     font-size: 12px;
     line-height: 22px;
-    color: #fff;
+    color: #333b41;
   }
   .mobile__nav__list {
+    width: 600px;
+    margin-top: 5px;
+    margin-bottom: 40px;
     list-style: none;
   }
   .mobile__nav__item {
-    margin-top: 5px;
+    margin-top: 15px;
   }
   .mobile__nav_active a {
     pointer-events: none;
-    color: #f9804b;
+    color: #fb8441;
   }
   .mobile__nav__item a:active {
-    color: #f9804b;
+    color: #fb8441;
+  }
+  .header__mob {
+    background-color: #fff;
   }
 
+}
+@media (max-width: 630px) {
+  .mobile__nav__list {
+    width: 300px;
+  }
 }
