@@ -11,8 +11,24 @@
 
   .donate__wrapper {
     min-height: 293px;
-    background: url(../assets/panda_bg.png) no-repeat top left 25%,  #333b41;
+    background: url(../assets/gorilla_bg.png) no-repeat top left 25%,  #333b41;
     background-size: auto;
+  }
+  .information__header__title {
+    margin-left: 70px;
+  }
+
+}
+@media (max-width: 630px) {
+
+  .information__header__title {
+    margin-left: 72px;
+  }
+  .mob_gorilla {
+    display: flex;
+    width: 319px;
+    height: 193px;
+    background: url(../assets/mob-gorilla.jpg) no-repeat center;
   }
 
 }

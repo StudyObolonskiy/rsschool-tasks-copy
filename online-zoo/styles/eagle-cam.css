@@ -11,8 +11,18 @@
 
   .donate__wrapper {
     min-height: 293px;
-    background: url(../assets/panda_bg.png) no-repeat top left 25%,  #333b41;
+    background: url(../assets/eagle_bg.png) no-repeat top right 30%,  #333b41;
     background-size: auto;
+  }
+
+}
+@media (max-width: 630px) {
+
+  .mob_eagle {
+    display: flex;
+    width: 319px;
+    height: 193px;
+    background: url(../assets/mob-eagle.jpg) no-repeat center;
   }
 
 }
