@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/petstory.css">
+  <script src="script.js" defer></script>
   <title>PetStory Online</title>
 </head>
 <body>
@@ -13,9 +14,11 @@
     <div class="header__wrapper">
       <div class="content__wrapper">
         <header>
-          <div class="logo">
-            <a href="petstory.html"><img src="assets/pet-logo.svg" alt="Logo"></a>
-          </div>
+          <a class="logo__link" href="petstory.html">
+            <div class="logo">
+            <div class="logo__img"></div>
+            </div>
+          </a>
           <nav class="header__nav">
             <ul class="header__nav__list">
               <li class="header__nav__item header__nav_active"><a href="petstory.html">About</a></li>
@@ -25,16 +28,31 @@
               <li class="header__nav__item"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></li>
             </ul>
           </nav>
-        </header>
+          <div class="menu-btn">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </header>        
       </div>
+      <nav class="mobile__nav">
+        <ul class="mobile__nav__list">
+          <li class="mobile__nav__item mobile__nav_active"><a href="petstory.html">About</a></li>
+          <li class="mobile__nav__item"><a href="map.html">Map</a></li>
+          <li class="mobile__nav__item"><a href="zoos/panda.html">Zoos</a></li>
+          <li class="mobile__nav__item"><a href="" onclick="return false">Contact Us</a></li>
+          <li class="mobile__nav__item"><a href="donate.html">Donate</a></li>
+          <li class="mobile__nav__item"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="favorite__wrapper">
       <div class="content__wrapper">
         <section class="favorite">
           <div class="favorite__sublayer">
             <p class="favorite__title">Watch your <span>favorite</span> animal online</p>
-            <button class="favorite__btn"><a href="zoos/panda.html">watch online</a></button>
-          </div>
+          </div>          
+          <button class="favorite__btn"><a href="zoos/panda.html">watch online</a></button>
         </section>
       </div>
     </div>
@@ -42,7 +60,9 @@
   <div class="backstage__wrapper">
     <div class="content__wrapper">
       <section class="backstage">
-        <img src="assets/bamboo-cap.jpg" alt="Bamboo cap">
+        <div class="backstage__img">
+          <img src="assets/bamboo-cap.jpg" alt="Bamboo cap">
+        </div>
         <div class="backstage__descr">
           <h2 class="backstage__title">The Backstage of the Wilderness World.</h2>
           <p class="backstage__subtitle">The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
@@ -157,6 +177,122 @@
         </div>
       </div>
     </div>
+    <div class="pets-mobile__wrapper">
+      <div class="pets__mobile">
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/giant-pandas.png" alt="Giant pandas">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">giant Pandas</p>
+              <p class="overlay__hobitat">Native to Southwest China</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">giant Pandas</p>
+              <p class="pets__habitat">Native to Southwest China</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/eagles.png" alt="Eagles">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Eagles</p>
+              <p class="overlay__hobitat">Native to South America</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Eagles</p>
+              <p class="pets__habitat">Native to South America</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/gorillas.png" alt="Gorillas">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Gorillas</p>
+              <p class="overlay__hobitat">Native to Congo</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Gorillas</p>
+              <p class="pets__habitat">Native to Congo</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/alligators.png" alt="Alligator">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Alligators</p>
+              <p class="overlay__hobitat">Native to Southeastern U. S.</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Alligators</p>
+              <p class="pets__habitat">Native to Southeastern U. S.</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/two-toed-sloth.png" alt="Two-toed sloth">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Two-toed Sloth</p>
+              <p class="overlay__hobitat">Mesoamerica, South America</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Two-toed Sloth</p>
+              <p class="pets__habitat">Mesoamerica, South America</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/cheetahs.png" alt="Cheetahs">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">cheetahs</p>
+              <p class="overlay__hobitat">Native to Africa</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">cheetahs</p>
+              <p class="pets__habitat">Native to Africa</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/penguins.png" alt="Penguins">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Penguins</p>
+              <p class="overlay__hobitat">Native to Antarctica</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Penguins</p>
+              <p class="pets__habitat">Native to Antarctica</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
     <button class="pets__btn"><a href="map.html">choose your favorite</a></button>
   </div>
   <div class="pick__wrapper">
@@ -177,6 +313,9 @@
           <div class="scheme__arrow">
             <img src="assets/scheme-arrow.svg" alt="">
           </div>
+          <div class="scheme__arrow_mob first">
+            <img src="assets/scheme-arrow-mob.svg" alt="">
+          </div>
           <div class="pick__scheme__item">
             <div class="scheme__img">
               <img src="assets/zoo.svg" alt="">
@@ -185,6 +324,9 @@
           </div>
           <div class="scheme__arrow">
             <img src="assets/scheme-arrow.svg" alt="">
+          </div>
+          <div class="scheme__arrow_mob second">
+            <img src="assets/scheme-arrow-mob.svg" alt="">
           </div>
           <div class="pick__scheme__item">
             <div class="scheme__img">
@@ -239,6 +381,8 @@
                 The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
                 
                 The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безопасную деревни, которое текст она рукописи они наш обеспечивает путь мир что если эта силуэт своих решила! Страну напоивший рекламных лучше толку, сих, всеми ведущими родного lorem свой пустился ты даже коварных пор жизни единственное. Журчит диких злых пунктуация ты!
                 </p>
             </div>
           </div>
@@ -295,6 +439,10 @@
         <div class="head__items">
           <div class="footer__logo">
             <a href="petstory.html"><img src="assets/pet-logo.svg" alt="Logo"></a>
+          </div>
+          <div class="mobile-logo">
+            <a href="petstory.html">PetStory online</a>
+            <img class="bamboo" src="assets/bamboo.svg" alt="">
           </div>
           <div class="footer__subscribe">
             <p class="subscribe__title">Subscribe to our news</p>

@@ -2,7 +2,17 @@
 @import "header.css";
 @import "panda-main.css";
 @import "footer.css";
+@import "adaptive.css";
 .donate__wrapper {
   background: url(../assets/crocodile_bg.png) no-repeat center,  #333b41;
   background-size: cover;
+}
+@media (max-width: 990px) {
+
+  .donate__wrapper {
+    min-height: 293px;
+    background: url(../assets/panda_bg.png) no-repeat top left 25%,  #333b41;
+    background-size: auto;
+  }
+
 }
