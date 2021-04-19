@@ -64,7 +64,7 @@ h1 {
   padding-top: 104px;
   padding-bottom: 121px;
   background-color: #eaf7fe;
-  overflow: auto;
+  overflow: hidden;
 }
 .map {
   position: relative;
@@ -208,10 +208,16 @@ h1 {
 .pandas-map:active svg path {
   fill: #f9804b;
 }
-.scale__btns {
+.btn__wrapper {
   position: absolute;
   right: 0;
   bottom: 0;
+  height: 100%;
+}
+.scale__btns {
+  position: sticky;
+  top: 100%;
+  bottom: 20px;
   margin-bottom: 40px;
   margin-right: 40px;
 }
@@ -292,7 +298,7 @@ h1 {
 @media (max-width: 990px) {
 
   .map__wrapper {
-    padding-top: 57px;
+    padding-top: 91px;
     padding-bottom: 26px;
   }
   .map {
@@ -365,7 +371,7 @@ h1 {
 @media (max-width: 630px) {
 
   .map__wrapper {
-    padding-top: 39px;
+    padding-top: 73px;
     padding-bottom: 18px;
   }
   .map {

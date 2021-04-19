@@ -1,0 +1,375 @@
+@media (max-width: 1500px) {
+
+  .side-bar__wrapper {
+    position: absolute;
+    height: 920px;
+  }
+  .side-bar {
+    width: 72px;
+    height: 438px;
+    padding: 10px;
+    margin-top: 92px;
+  }
+  .side-bar__icon__border {
+    width: 52px;
+    height: 52px;
+  }
+  .side-bar__icon svg {
+    transform: scale(0.75);
+  }
+  .animal-cam {
+    width: 100%;
+    margin-left: 0;
+  }
+  .animal-cam__video {
+    align-self: center;
+  }
+  .animal-cam__title {
+    margin-top: 20px;
+    margin-bottom: 24px;    
+  }
+  .animal-cam__player {
+    width: 778px;
+    height: 438px;
+  }
+  .animal-cam__slider {
+    max-width: 778px;
+    max-height: 210px;
+    margin-top: 60px;
+    align-self: center;
+    overflow: hidden;
+  }
+  .slider__dummy {
+    flex-wrap: wrap;
+    max-width: 646px;
+  }
+  .arrow-right__btn {
+    top: 32px;
+    right: 70px;
+  }
+  .arrow-left__btn {
+    top: 104px;
+    left: auto;
+    right: 70px;
+  }
+  .information {
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 94%;
+    max-width: 1500px;
+  }
+  .information__header__content img{
+    width: 455px;
+    height: 458px;
+  }
+  .information__header__title {
+    margin-bottom: 20px;
+  }
+  .information__heder__main {
+    margin-left: 30px;
+  }
+  .information__header__notation {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .information__header__btn {
+    margin-top: 20%;
+  }
+  .separator {
+    display: none;
+  }
+  .information__main {
+    margin-top: 60px;
+    margin-bottom: 140px;
+  }
+  .information__main__item {
+    margin-bottom: 18px;
+  }
+  .details {
+    margin-bottom: 25px;
+  }
+  .zoo-cam__wrapper {
+    background: url(../assets/strelitzia-reverse-1000.png) no-repeat left bottom, url(../assets/leave-rotate-1000.png) no-repeat right bottom, #fdfdff
+  }
+
+}
+@media (max-width: 1050px) {
+
+  .animal-cam__video {
+    align-self: flex-start;    
+    margin-left: 192px;
+  }
+  .animal-cam__slider {
+    align-self: flex-start;
+    margin-left: 192px;
+  }
+  .animal-cam__slider__item {
+    width: 293px;
+    height: 210px;
+  }
+
+}
+@media (max-width: 990px) {
+
+  .side-bar__wrapper {
+    height: 710px;
+  }
+  .side-bar {
+    top: 66px;
+    margin-top: 113px;
+    margin-left: 20px;
+  }
+  .animal-cam__video {
+    align-self: center;
+    margin-left: 0;
+  }
+  .animal-cam__title {
+    margin-top: 56px;   
+  }
+  .animal-cam__slider {
+    align-self: center;
+    margin-left: 0;
+  }
+  .animal-cam__player {
+    width: 495px;
+    height: 278px;
+  }
+  .animal-cam__slider {
+    max-width: 495px;
+    max-height: 140px;
+    margin-top: 20px;
+  }
+  .slider__dummy {
+    max-width: 420px;
+  }
+  .animal-cam__slider__item {
+    width: 180px;
+    height: 140px;
+  }
+  .arrow-left__btn,
+  .arrow-right__btn {
+    width: 42px;
+    height: 42px;
+  }
+  .arrow-right__btn {
+    top: 24px;
+    right: 31px;
+  }
+  .arrow-left__btn {
+    top: 74px;
+    right: 31px;
+  }
+  .information {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 95%;
+  }
+  .information__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .information__header__title {
+    align-self: center;
+  }
+  .information__header__content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .information__header__content img {
+    width: 390px;
+    height: 393px;
+  }
+  .information__heder__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .information__header__notation {
+    margin-top: 30px;
+    width: 66%;
+  }
+  .information__header__btn {
+    align-self: center;
+    margin-top: 7%;
+  }
+  .information__main__item:first-child .information__main__descr {
+    width: 84%;
+    margin-top: 6px;
+  }
+  .information__main__item:first-child {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .zoo-cam__wrapper {
+    background: url(../assets/strelitzia-reverse-640.png) no-repeat left bottom, url(../assets/leave-rotate-640.png) no-repeat right bottom, #fdfdff
+  }
+  .donate__wrapper {
+    min-height: 293px;
+    background: url(../assets/panda_bg.png) no-repeat top left 25%,  #333b41;
+    background-size: auto;
+  }
+  .donate__btn {
+    margin-bottom: 40px;
+  }
+
+}
+@media (max-width: 720px) {
+
+  .information {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  .animal-cam__video {
+    align-self: flex-start;
+    margin-left: 125px;
+  }
+  .animal-cam__title {
+    margin-top: 56px;
+    margin-bottom: 20px;
+  }
+  .animal-cam__slider {
+    align-self: flex-start;
+    margin-left: 125px;
+  }
+
+}
+@media (max-width: 630px) {
+
+  .side-bar__wrapper {
+    top: 281px;
+    left: 10px;
+    height: 100%;
+  }
+  .side-bar {
+    position: static;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 5px;
+    width: 62px;
+    height: 233px;
+  }
+  .animal-cam__wrapper {
+    align-items: center;
+  }
+  .animal-cam__video {
+    align-self: center;
+    margin-left: 0;
+  }
+  .animal-cam {
+    align-items: center;
+  }
+  .animal-cam__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .animal-cam__slider {
+    align-self: center;
+    margin-left: 0;
+    max-width: 200px;
+    max-height: 146px;
+    margin-top: 20px;
+  }
+  .side-bar__link {
+    margin-bottom: 5px;
+  }
+  .side-bar__link:nth-child(4) {
+    display: none;
+  }
+  .side-bar__link:nth-child(5) {
+    display: none;
+  }
+  .side-bar__link:nth-child(6) {
+    display: none;
+  }
+  .animal-cam__player {
+    width: 299px;
+    height: 168px;
+  }
+  .slider__dummy {
+    flex-wrap: wrap;
+    max-width: 200px;
+  }
+  .arrow-right__btn {
+    display: none;
+  }
+  .arrow-left__btn {
+    display: none;
+  }
+  .animal-cam__slider__item {
+    width: 89px;
+    height: 68px;
+    margin-right: 10px;
+  }
+  .live-icon {
+    width: 19px;
+    height: 8px;
+    top: 3px;
+    left: 6px;
+    font-size: 5px;
+    line-height: 7px;
+  }
+  .information {
+    margin-top: 60px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 319px;
+    align-self: center;
+  }
+  .information__header__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .information__header__content img {
+    display: none;
+  }
+  .mob-panda {
+    display: flex;
+    width: 319px;
+    height: 193px;
+    background: url(../assets/mob-panda.png);
+  }
+  .information__header__notation {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    width: 100%;
+    max-width: 319px;
+  }
+  .information__header__btn {
+    margin-top: 30px;
+  }
+  .information__main__item:first-child .information__main__descr {
+    width: 78%;
+  }
+  .information__main {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .zoo-cam__wrapper {
+    background: url(../assets/strelitzia-reverse-320.png) no-repeat left bottom, url(../assets/leave-rotate-320.png) no-repeat right bottom, #fdfdff
+  }
+  .donate__btn {
+    margin-bottom: 10px;
+  }
+
+}
+@media (max-width: 400px) {
+
+  .animal-cam__slider {
+    align-self: flex-start;
+    margin-left: 93px;
+    max-width: 200px;
+    max-height: 146px;
+    margin-top: 20px;
+  }
+
+}

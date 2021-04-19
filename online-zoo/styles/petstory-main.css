@@ -546,10 +546,14 @@ h1 {
   .content__wrapper {
     max-width: 940px;
   }
+  .header__nav__item {
+    margin-right: 48px;
+  }
   .favorite__sublayer {
     margin-top: 0;
     margin-bottom: 40px;
     padding-top: 43px;
+    margin-right: 56px;
     padding-left: 58px;
     background-position:  top -15px left;
     background-size: 367px 367px
@@ -562,7 +566,7 @@ h1 {
   .favorite__btn {
     margin-top: 0;
     margin-bottom: 47px;
-    margin-right: 40px;
+    margin-right: 107px;
   }
   .backstage__wrapper {
     width: 100%;
@@ -573,13 +577,13 @@ h1 {
   .backstage__img {
     position: relative;
     width: 455px;
-    height: 408px;
+    height: 414px;
     overflow: hidden;
   }
   .backstage__img img {
     position: absolute;
-    top: 0;
-    left: -15%;
+    top: 3%;
+    left: -17%;
   }
   .backstage__descr {
     margin-left: 30px;
@@ -658,7 +662,7 @@ h1 {
     border-radius: 18px;
   }
   .testimonials__btn {
-    margin-top: 20px;
+    margin-top: 49px;
   }
 
 }
@@ -668,9 +672,13 @@ h1 {
   .content__wrapper {
     max-width: 600px;
   }
+  .favorite {
+    padding-top: 34px;
+  }
   .favorite__sublayer {
     margin-top: 10px;
     margin-bottom: 0;
+    margin-right: 0;
     padding-top: 38px;
     padding-left: 37px;
     background-position:  top left;
@@ -682,6 +690,7 @@ h1 {
     max-width: 256px;
   }
   .favorite__btn {
+    margin-top: -8px;
     margin-bottom: 40px;
     align-self: flex-start;
   }
@@ -787,7 +796,7 @@ h1 {
   .testimonials__wrapper {
     background: url(../assets/leav-640.png) no-repeat right bottom, #fff;
     padding-top: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
   }
   .testimonials {
     justify-content: flex-start;
@@ -818,7 +827,8 @@ h1 {
     display: none;
   }
   .testimonials__btn {
-    margin-top: 40px;
+    width: 240px;
+    margin-top: 36px;
   }
 
 }

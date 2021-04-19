@@ -217,8 +217,24 @@
   .copypast {
     margin-left: 86px;
   }
+  .head__items {
+    margin-left: 14px;
+  }
+  .footer__subscribe {
+    margin-right: 34px;
+  }
+  .footer__btn {
+    margin-left: 14px;
+  }
+  .bottom__items {
+    margin-left: 14px;
+  }
+  .testimonials__progress {
+    width: 400px;
+  }
 
 }
+
 @media (max-width: 990px) {
   
   .footer__wrapper {
@@ -239,6 +255,7 @@
   }
   .footer__btn {
     margin-top: 32px;
+    margin-left: 0;
   }
   .bottom__items {
     margin: 67px 0 0;
@@ -303,6 +320,7 @@
   .footer__subscribe {
     display: flex;
     flex-direction: column;
+    margin-right: 0;
   }
   .subscribe__form {
     display: flex;

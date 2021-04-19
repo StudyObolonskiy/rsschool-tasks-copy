@@ -325,3 +325,220 @@ h1 {
   line-height: 22px;
   color: #333b41;
 }
+@media (max-width: 1500px) {
+
+  .head-panda {
+    background: url(../assets/head-donat-panda.png) no-repeat top left 29%;
+  }
+  .donate {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .donat__notation__descr {
+    margin-top: 30px;
+  }
+  .feed-friend {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 46px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.52);
+  }
+  .feed-friend__subtitle {
+    margin-top: 10px;
+  }
+  .amount__scale {
+    width: 810px;
+  }
+  .amount__item:nth-child(2) {
+    display: none;
+  }
+  .amount__scale__line {
+    width: 785px;
+  }
+  .another-amount {
+    margin-top: 108px;
+    margin-left: 25px;
+  }
+  .amount__value {
+    left: -120%;
+  }
+
+}
+@media (max-width: 990px) {
+
+  .head-panda__wrapper {    
+    padding-top: 34px;
+  }
+  .head-panda {
+    height: 335px;
+    background: url(../assets/head-donat-panda.png) no-repeat top left 35%;    
+    background-size: cover;
+  }
+  .donate {
+    padding-top: 30px;
+    padding-bottom: 46px;
+  }
+  .donat__notation__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .donat__notation__descr {
+    margin-top: 20px;
+  }
+  .donate__info {
+    margin-top: 30px;
+  }
+  .feed-friend {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 31px;
+  }
+  .feed-friend__subtitle {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .feed-friend__info {
+    margin-top: 50px;
+  }
+  .amount__title {
+    margin-bottom: 7px;
+    margin-left: 10px;
+  }
+  .amount__scale {
+    width: 600px;
+  }
+  .amount__item:nth-child(2),
+  .amount__item:nth-child(3),
+  .amount__item:nth-child(4) {
+    display: none;
+  }
+  .amount__scale__line {
+    width: 524px;
+  }
+  .another-amount {
+    margin-top: 88px;
+    margin-left: 10px;
+    width: 180px;
+    height: 42px;
+  }
+  .period {
+    margin-top: 41px;
+  }
+  .sign {
+    top: 11px;
+    right: 10px;
+  }
+  .feed-friend__btn {
+    margin-top: 30px;
+  }
+  .amount__value {
+    left: -165%;
+  }
+
+}
+@media (max-width: 630px) {
+
+  .head-panda {
+    height: 180px;
+    background-size: cover;
+  }
+  .donate {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .donate__info {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .feed-friend {
+    padding-bottom: 20px;
+  }
+  .feed-friend__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .feed-friend__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .diet__animal img {
+    width: 160px;
+  }
+  .diet__count {
+    font-size: 40.6px;
+    line-height: 32px;
+  }
+  .diet {
+    margin-top: 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .diet__descr {
+    margin-top: 6px;
+    width: 89.6px;
+    font-size: 9px;
+    line-height: 13px;
+    text-align: center;
+    color: #333b41;
+  }
+  .marker {
+    width: 8px;
+    height: 8px;
+    margin: 73px 36px 0 6px;
+    background: url(../assets/x-icon.svg) no-repeat center;
+  }
+  .amount__scale {
+    width: 300px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .amount__scale__line {
+    width: 262px;
+    height: 1px;
+  }
+  .amount__item {
+    margin-right: 60px;
+  }
+  .point {
+    width: 6px;
+    height: 6px;
+  }
+  .point::before {
+    width: 12px;
+    height: 12px;
+  }
+  .point::after {
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+  .amount__btn:checked + .point::before {  
+    border: 1px solid #fe9013;
+  }
+  .amount__btn:checked + .point::after {  
+    border: 1px solid #fe9013;
+  }
+  .amount__value {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .another-amount {
+    margin-top: 54px;
+    margin-left: 0;
+    width: 180px;
+    height: 42px;
+  }
+  .period {
+    margin-top: 30px;
+  }
+  .feed-friend__note {
+    width: 301px;
+  }
+
+}
