@@ -116,7 +116,7 @@
     height: 710px;
   }
   .side-bar {
-    top: 66px;
+    position: static;
     margin-top: 113px;
     margin-left: 20px;
   }
@@ -125,7 +125,9 @@
     margin-left: 0;
   }
   .animal-cam__title {
-    margin-top: 56px;   
+    margin-top: 56px;
+    font-size: 36px;
+    line-height: 47px;   
   }
   .animal-cam__slider {
     align-self: center;
@@ -356,6 +358,9 @@
   }
   .zoo-cam__wrapper {
     background: url(../assets/strelitzia-reverse-320.png) no-repeat left bottom, url(../assets/leave-rotate-320.png) no-repeat right bottom, #fdfdff
+  }
+  .donate__wrapper {
+    min-height: 220px;
   }
   .donate__btn {
     margin-bottom: 10px;
