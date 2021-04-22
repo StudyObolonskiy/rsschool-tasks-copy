@@ -18,6 +18,9 @@
 }
 @media (max-width: 630px) {
 
+  .donate__wrapper {
+    min-height: 220px;
+  }
   .mob_croc {
     display: flex;
     width: 319px;

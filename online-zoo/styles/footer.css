@@ -320,6 +320,7 @@
   .footer__subscribe {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-right: 0;
   }
   .subscribe__form {
@@ -344,6 +345,8 @@
   }
   .subscribe__title {
     margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .subscribe__email {
     margin-bottom: 10px;
