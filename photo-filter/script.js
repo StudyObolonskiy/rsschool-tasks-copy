@@ -93,7 +93,7 @@ function drawImage() {
   img.onload = () => {
     canvas.width = img.width;
     canvas.height = img.height;
-    let factor = canvas.height / image.height;
+    let factor = (canvas.height / image.height).toFixed(2);
     const ctx = canvas.getContext("2d");        
     ctx.filter = `blur(${factor * outputs[0].value}px) invert(${outputs[1].value}%) sepia(${outputs[2].value}%) saturate(${outputs[3].value}%) hue-rotate(${outputs[4].value}deg)`;
     ctx.drawImage(img, 0, 0);
