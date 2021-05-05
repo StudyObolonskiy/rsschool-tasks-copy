@@ -123,6 +123,7 @@ h1 {
   width: 100%;
   max-width: 1160px;
   margin-top: 80px;
+  cursor: pointer;
 }
 .arrow-left__btn,
 .arrow-right__btn {
@@ -162,13 +163,13 @@ h1 {
   right: -82px;
 }
 .slider__dummy {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
   width: 100%;
   background-color: transparent;
-  pointer-events: none;
 }
 .animal-cam__slider__item {
   position: relative;
@@ -178,6 +179,15 @@ h1 {
 }
 .animal-cam__slider__item:last-child {
   margin-right: 0;
+}
+.animal-cam__slider__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
 }
 .live-icon {
   position: absolute;
@@ -293,6 +303,10 @@ h1 {
   line-height: 22px;
   color: #000;
 }
+.spoiler {
+  overflow: hidden;
+  width: 100%;
+}
 .information__main__item:not(:first-child) .information__main__descr {
   margin-top: 10px;
 }
@@ -323,6 +337,9 @@ h1 {
 }
 .info__btn:hover {
   background: #dedede;
+}
+.info__btn_active {
+  margin-top: 10px;
 }
 .donate__wrapper {
   width: 100%;

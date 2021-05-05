@@ -56,11 +56,15 @@ h1 {
   transform: rotate(45deg);
   background-color: white;
 }
+.animal_active ~ .tooltip {
+  visibility: visible;
+}
 .map__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 942px;
   padding-top: 104px;
   padding-bottom: 121px;
   background-color: #eaf7fe;
@@ -72,6 +76,9 @@ h1 {
   display: flex;
   justify-content: center;
   width: 1084px;
+}
+.map__img {
+  width: 100%;
 }
 .unated-states {
   position: absolute;
@@ -87,6 +94,7 @@ h1 {
   position: absolute;
   left: 8.75%;
   top: 51.5%;
+  z-index: 2;
 }
 .top-eagle__img {
   cursor: pointer;
@@ -101,9 +109,9 @@ h1 {
   top: 130%;
   left: -50%;
 }
-.eagles:hover .eagles__tooltip {
+/* .eagles:hover .eagles__tooltip {
   visibility: visible;
-}
+} */
 .eagles-marker {
   position: absolute;
   left: 100%;
@@ -129,9 +137,9 @@ h1 {
   top: 130%;
   left: -25%;
 }
-.crocodile:hover .crocodile__tooltip {
+/* .crocodile:hover .crocodile__tooltip {
   visibility: visible;
-}
+} */
 .crodile-marker {
   position: absolute;
   left: 3%;
@@ -158,9 +166,9 @@ h1 {
   top: 110%;
   left: -60%;
 }
-.gorilla:hover .gorilla__tooltip {
+/* .gorilla:hover .gorilla__tooltip {
   visibility: visible;
-}
+} */
 .gorilla-marker {
   position: absolute;
   left: 0;
@@ -192,9 +200,9 @@ h1 {
   top: 110%;
   left: -60%;
 }
-.pandas-map:hover .pandas-map__tooltip {
+/* .pandas-map:hover .pandas-map__tooltip {
   visibility: visible;
-}
+} */
 .pandas-marker {
   position: absolute;
   right: -45%;
@@ -213,6 +221,7 @@ h1 {
   right: 0;
   bottom: 0;
   height: 100%;
+  z-index: 1;
 }
 .scale__btns {
   position: sticky;
@@ -250,13 +259,14 @@ h1 {
   .map__wrapper {
     padding-top: 90px;
     padding-bottom: 39px;
+    height: 749px;
   }
   .map {
     width: 938px;
   }
-  .map__img {
+  /* .map__img {
     width: 938px;
-  }
+  } */
   .area {
     font-size: 12px;
     line-height: 16px;
@@ -300,13 +310,14 @@ h1 {
   .map__wrapper {
     padding-top: 91px;
     padding-bottom: 26px;
+    height: 510px;
   }
   .map {
     width: 594px;
   }
-  .map__img {
+  /* .map__img {
     width: 594px;
-  }
+  } */
   .area {
     font-size: 8px;
     line-height: 10px;
@@ -373,14 +384,15 @@ h1 {
   .map__wrapper {
     padding-top: 73px;
     padding-bottom: 18px;
+    height: 360px;
   }
   .map {
     width: 406px;
     margin-left: 35px;
   }
-  .map__img {
+  /* .map__img {
     width: 406px;
-  }
+  } */
   .area {
     font-size: 5.6px;
     line-height: 7px;
