@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/donate.css">
   <script src="script.js" defer></script>
+  <script src="donate.js" defer></script>
   <title>Donate</title>
 </head>
 <body>
@@ -110,7 +111,7 @@
               </div>
               <div class="amount__item">
                 <label>
-                  <input class="amount__btn" type="radio" name="amounty" value="100">
+                  <input class="amount__btn amount__btn_checked" type="radio" name="amounty" value="100">
                   <div class="point"></div>
                   <p class="amount__value">$100</p>
                 </label>
@@ -132,7 +133,7 @@
             </div>
           </div>
           <div class="another-amount">
-            <input class="another-amount__field" type="number" maxlength="4" min="1" max="9999" placeholder="Another amount">
+            <input class="another-amount__field" type="number" maxlength="4" min="1" max="9999" placeholder="Another amount" value="100">
             <div class="sign">$</div>
           </div>
           <div class="period">

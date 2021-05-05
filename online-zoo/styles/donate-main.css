@@ -182,12 +182,12 @@ h1 {
   border-radius: 50%;
   cursor:pointer
 }
-.amount__btn:checked + .point::before {  
+/* .amount__btn:checked + .point::before {  
   border: 2px solid #fe9013;
 }
 .amount__btn:checked + .point::after {  
   border: 2px solid #fe9013;
-}
+} */
 .amount__value {
   position: absolute;
   top: 0;
@@ -197,7 +197,16 @@ h1 {
   line-height: 36px;
   color: #333b41;
 }
-.amount__btn:checked ~ .amount__value {  
+/* .amount__btn:checked ~ .amount__value {  
+  color: #fe9013;
+} */
+.amount__btn_checked + .point::before {  
+  border: 2px solid #fe9013;
+}
+.amount__btn_checked + .point::after {  
+  border: 2px solid #fe9013;
+}
+.amount__btn_checked ~ .amount__value {  
   color: #fe9013;
 }
 .another-amount {
