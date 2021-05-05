@@ -105,7 +105,7 @@ const carousel = document.querySelector(".carusel"),
   testimonialsProgress = document.querySelector('.testimonials__progress');
 let width = testimonialsCard.offsetWidth;
 
-let autoSlideInterval = setInterval(autoSlider, 3000);
+let autoSlideInterval = setInterval(autoSlider, 10000);
 let autoSlideTimeout = null
 function slider() {
   let inputValue = testimonialsProgress.value;
@@ -126,8 +126,8 @@ function delayAutoSlider() {
   autoSlideInterval = null
   autoSlideTimeout = setTimeout(() => {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlider, 3000);
-  }, 7000);
+    autoSlideInterval = setInterval(autoSlider, 10000);
+  }, 30000);
 }
 testimonialsProgress.addEventListener('input', slider);
 testimonialsProgress.addEventListener('input', delayAutoSlider);
