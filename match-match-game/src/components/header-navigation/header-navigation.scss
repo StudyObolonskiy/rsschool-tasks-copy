@@ -1,0 +1,44 @@
+.navigation-items {
+  min-height: 64px;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+.navigation-item {
+  font-weight: 700;
+
+  & > a {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  }
+
+  &.active {
+    background-color: rgb(223, 164, 76);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+
+    &.about-game-icon {
+      background: url('../../assets/about-icon.svg') center no-repeat white;
+    }
+
+    &.best-score-icon {
+      background: url('../../assets/best-score.svg') center no-repeat;
+    }
+
+    &.game-setting-icon {
+      background: url('../../assets/setting.svg') center no-repeat white;
+    }
+  }
+}
