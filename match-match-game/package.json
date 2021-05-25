@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --env development",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix --ext .ts,.js ."
   },
   "author": "StudyObolonskiy",
   "devDependencies": {
