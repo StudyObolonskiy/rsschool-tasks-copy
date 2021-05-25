@@ -1,0 +1,32 @@
+.setting__field {
+  width: 60%;
+  padding: 30px 30px 50px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+
+  & > p {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  & > select {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(255, 152, 92);
+    color: white;
+    background-color: transparent;
+
+    &.category {
+      margin-bottom: 50px;
+    }
+
+    & > option {
+      background: chocolate;
+      color: white;
+    }
+  }
+}
