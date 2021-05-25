@@ -1,0 +1,22 @@
+.cards-field {
+  width: 100%;
+  max-width: 780px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &.small {
+    max-width: 530px;
+  }
+
+  &.middle {
+    max-width: 780px;
+  }
+
+  &.large {
+    max-width: 1050px;
+  }
+}
