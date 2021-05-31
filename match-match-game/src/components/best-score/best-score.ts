@@ -8,7 +8,7 @@ export class BestScore extends BaseComponent {
     super('main', ['best-score']);
   }
 
-  showPage(arr: Array<User>):void {
+  showPage(arr: Array<User>): void {
     myBase.init();
     for (let i = 0; i < arr.length; i++) {
       const wrapper = document.createElement('div');
@@ -34,7 +34,7 @@ export class BestScore extends BaseComponent {
     }
   }
 
-  clear():void {
+  clear(): void {
     this.element.innerHTML = '';
   }
 }

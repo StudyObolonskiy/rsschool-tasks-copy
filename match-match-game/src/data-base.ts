@@ -5,7 +5,7 @@ export class DataBase {
 
   public playersArr: IDBCursorWithValue | null = null;
 
-  public init():void {
+  public init(): void {
     const openRequest = this.dB.open('StudyObolonskiy');
     openRequest.onupgradeneeded = () => {
       this.database = openRequest.result;
@@ -91,7 +91,7 @@ export class DataBase {
     };
   }
 
-  getUsers():void {
+  getUsers(): void {
     if (this.database) {
       const transaction = this.database.transaction('users', 'readonly');
       const store = transaction.objectStore('users');

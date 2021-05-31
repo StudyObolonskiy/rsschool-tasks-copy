@@ -125,7 +125,11 @@ export class App {
                 avatar: './images/animals/25.png',
               },
               {
-                firstName: 'Ben', lastName: 'Jones', email: 'b.j@example.com', score: 1700, avatar: './images/animals/26.png',
+                firstName: 'Ben',
+                lastName: 'Jones',
+                email: 'b.j@example.com',
+                score: 1700,
+                avatar: './images/animals/26.png',
               },
               {
                 firstName: 'Andrew',
@@ -142,7 +146,11 @@ export class App {
                 avatar: './images/animals/29.png',
               },
               {
-                firstName: 'Fred', lastName: 'Miller', email: 'f.m@example.com', score: 1700, avatar: './images/animals/30.png',
+                firstName: 'Fred',
+                lastName: 'Miller',
+                email: 'f.m@example.com',
+                score: 1700,
+                avatar: './images/animals/30.png',
               },
               {
                 firstName: 'Martin',
@@ -159,7 +167,11 @@ export class App {
                 avatar: './images/animals/24.png',
               },
               {
-                firstName: 'Bill', lastName: 'Taylor', email: 'b.t@example.com', score: 1700, avatar: './images/animals/22.png',
+                firstName: 'Bill',
+                lastName: 'Taylor',
+                email: 'b.t@example.com',
+                score: 1700,
+                avatar: './images/animals/22.png',
               },
             ]);
             this.rootElement.appendChild(this.bestScore.element);

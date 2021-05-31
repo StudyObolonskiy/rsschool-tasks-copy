@@ -105,7 +105,7 @@ export class RegisterForm extends BaseComponent {
       this.lastNameError.element,
       this.mailLabel,
       this.mail.element,
-      this.fileInput.element,
+      this.fileInput.element
     );
     this.controlForm.element.append(this.addBtn, this.cancelBtn);
     this.element.append(this.title.element, this.avatarWrapper.element, this.form, this.controlForm.element);
@@ -205,9 +205,9 @@ export class RegisterForm extends BaseComponent {
 
   validationForm(): void {
     if (
-      this.mail.element.matches('.valid')
-      && this.lastName.element.matches('.valid')
-      && this.firstName.element.matches('.valid')
+      this.mail.element.matches('.valid') &&
+      this.lastName.element.matches('.valid') &&
+      this.firstName.element.matches('.valid')
     ) {
       this.isValid = true;
     }
