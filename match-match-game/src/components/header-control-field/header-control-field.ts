@@ -3,7 +3,7 @@ import './control-field.scss';
 
 export class ControlField extends BaseComponent {
   constructor() {
-    super('div', ['control-field', 'register']);
+    super('div', ['control-field']);
   }
 
   create(avatarSrc: string): void {
@@ -25,7 +25,7 @@ export class ControlField extends BaseComponent {
     registerBtn.classList.add('control-field__btn', 'register-btn');
     registerBtn.textContent = 'register new player';
     startBtn.classList.add('control-field__btn', 'start-btn');
-    startBtn.textContent = 'start game';
+    startBtn.innerHTML = '<a href="#game">start game</a>';
     avatarField.classList.add('control-field__avatar');
     avatarImg.classList.add('avatar');
     avatarField.appendChild(avatarImg);

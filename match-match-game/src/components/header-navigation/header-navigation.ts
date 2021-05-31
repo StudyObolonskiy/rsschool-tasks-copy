@@ -21,7 +21,7 @@ export class HeaderNavigation extends BaseComponent {
     `;
     navigationItemBest.classList.add('navigation-item', 'score');
     navigationItemBest.innerHTML = `
-      <a href="#game">
+      <a href="#best-score">
       <div class="navigation-item__icon best-score-icon"></div>
       <p class="navigation-item__notation">Best Score</p>
       </a>

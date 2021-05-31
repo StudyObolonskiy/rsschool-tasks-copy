@@ -65,10 +65,12 @@ module.exports = ({ development }) => ({
     }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new PrettierPlugin({
-      printWidth: 80,
       tabWidth: 2,
+      printWidth: 130,
       useTabs: false,
       semi: true,
+      tailingComma: "none",
+      singleQuote: true,
       encoding: 'utf-8',
       extensions: [ ".js", ".ts" ]
     })

@@ -23,9 +23,9 @@ export class Game extends BaseComponent {
 
   private isAnimation = false;
 
-  private gameRun = true;
+  public gameRun = true;
 
-  private timeMinute = 0;
+  private gameTime = 0;
 
   private numberMatchingCards = 0;
 
@@ -34,9 +34,7 @@ export class Game extends BaseComponent {
     this.cardsField = new CardField();
     this.timerField = new BaseComponent('div', ['timer-field']);
     this.stopGame = new BaseComponent('div', ['stop-game']);
-    this.cangratulationWrapper = new BaseComponent('div', [
-      'cangratulation-wrapper',
-    ]);
+    this.cangratulationWrapper = new BaseComponent('div', ['cangratulation-wrapper']);
     this.element.appendChild(this.timerField.element);
     this.element.appendChild(this.cardsField.element);
   }
@@ -44,7 +42,7 @@ export class Game extends BaseComponent {
   createTimer(): void {
     this.stopTimer();
     this.stopGame.element.remove();
-    this.timeMinute = 0;
+    this.gameTime = 0;
     this.timerField.element.textContent = 'Minutes: 0 seconds: 0';
     setTimeout(() => {
       this.startTimer();
@@ -58,11 +56,11 @@ export class Game extends BaseComponent {
       return;
     }
     const run = () => {
-      const seconds = this.timeMinute % 60;
-      const minutes = (this.timeMinute / 60) % 60;
+      const seconds = this.gameTime % 60;
+      const minutes = (this.gameTime / 60) % 60;
       const strTimer = `Minutes: ${Math.trunc(minutes)} seconds: ${seconds}`;
       this.timerField.element.textContent = strTimer;
-      ++this.timeMinute;
+      ++this.gameTime;
       timeoutId = window.setTimeout(run, 1000);
     };
     run();
@@ -72,13 +70,19 @@ export class Game extends BaseComponent {
     if (timeoutId) {
       clearTimeout(timeoutId);
       timeoutId = null;
-      if (this.gameRun) {
-        const startBtn = document.createElement('button');
-        startBtn.textContent = 'Start';
-        startBtn.addEventListener('click', this.startTimer);
-        this.stopGame.element.appendChild(startBtn);
-        this.element.appendChild(this.stopGame.element);
-      }
+      const cangratulation = document.createElement('div');
+      const cangratulationNotation = document.createElement('p');
+      const cangratulationLink = document.createElement('a');
+      cangratulation.classList.add('cangratulation');
+      cangratulationNotation.textContent = `Congratulations! You successfully found all matches on ${
+        (this.gameTime / 60) % 60
+      } minutes.`;
+      cangratulationLink.textContent = 'Go to score';
+      cangratulationLink.setAttribute('href', '#about');
+      cangratulation.append(cangratulationNotation, cangratulationLink);
+      this.cangratulationWrapper.element.appendChild(cangratulation);
+      this.element.appendChild(this.cangratulationWrapper.element);
+      this.gameRun = false;
     }
   }
 
@@ -109,16 +113,6 @@ export class Game extends BaseComponent {
 
   endGame(): void {
     this.stopTimer();
-    const cangratulation = document.createElement('div');
-    const cangratulationNotation = document.createElement('p');
-    const cangratulationLink = document.createElement('a');
-    cangratulation.classList.add('cangratulation');
-    cangratulationNotation.textContent = 'Поздравляю все хорошо иди на страницу результатов';
-    cangratulationLink.textContent = 'ткни сюда';
-    cangratulationLink.setAttribute('href', '#about');
-    cangratulation.append(cangratulationNotation, cangratulationLink);
-    this.cangratulationWrapper.element.appendChild(cangratulation);
-    this.element.appendChild(this.cangratulationWrapper.element);
   }
 
   private async cardHandler(card: Card) {
@@ -171,5 +165,9 @@ export class Game extends BaseComponent {
     if (size > 36) {
       cardField.classList.add('large');
     }
+  }
+
+  sendScore(): string {
+    return String(this.numberMatchingCards * 100 - this.gameTime * 10);
   }
 }
