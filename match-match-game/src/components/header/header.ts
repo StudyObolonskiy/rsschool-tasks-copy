@@ -16,6 +16,7 @@ export class Header extends BaseComponent {
 
   add(avatarSrc: string): void {
     const logo = document.createElement('div');
+
     logo.classList.add('logo');
     logo.innerHTML = `
     <p class="logo__top-row">match</p>

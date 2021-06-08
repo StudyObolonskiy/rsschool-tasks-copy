@@ -13,6 +13,7 @@ export class ControlField extends BaseComponent {
     const avatarImg = document.createElement('canvas');
     const ctx = avatarImg.getContext('2d');
     const image = new Image(40, 40);
+
     image.src = avatarSrc;
     const drawImageCanvas = () => {
       if (ctx) {

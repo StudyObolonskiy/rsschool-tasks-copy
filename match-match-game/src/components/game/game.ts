@@ -59,6 +59,7 @@ export class Game extends BaseComponent {
       const seconds = this.gameTime % 60;
       const minutes = (this.gameTime / 60) % 60;
       const strTimer = `Minutes: ${Math.trunc(minutes)} seconds: ${seconds}`;
+
       this.timerField.element.textContent = strTimer;
       ++this.gameTime;
       timeoutId = window.setTimeout(run, 1000);

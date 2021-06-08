@@ -23,6 +23,7 @@ export class SettingField extends BaseComponent {
     const lowOption = document.createElement('option');
     const middleOption = document.createElement('option');
     const hightOption = document.createElement('option');
+
     categorySelect.classList.add('category');
     cardsNotation.textContent = 'Games cards';
     difficultyNotation.textContent = 'Difficulty level';

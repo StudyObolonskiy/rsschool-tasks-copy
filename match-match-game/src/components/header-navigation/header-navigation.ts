@@ -11,6 +11,7 @@ export class HeaderNavigation extends BaseComponent {
     const navigationItemAbout = document.createElement('li');
     const navigationItemBest = document.createElement('li');
     const navigationItemSetting = document.createElement('li');
+
     navigationItems.classList.add('navigation-items');
     navigationItemAbout.classList.add('navigation-item', 'active', 'about');
     navigationItemAbout.innerHTML = `

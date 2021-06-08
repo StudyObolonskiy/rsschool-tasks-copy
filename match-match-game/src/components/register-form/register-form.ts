@@ -115,6 +115,7 @@ export class RegisterForm extends BaseComponent {
     const onlyNum = /^[0-9]+$/;
     const validPerson = /^[а-яА-Яa-zA-Z0-9 ]{1,30}$/;
     const mailValid = /\S+@\S+\.\S+/;
+
     this.firstName.element.addEventListener('input', () => {
       if (this.firstName.element.value.length === 0 || !this.firstName.element.value.match(validPerson)) {
         this.firstName.element.classList.remove('valid');
@@ -166,6 +167,7 @@ export class RegisterForm extends BaseComponent {
   drawAvatar(): void {
     const ctx = this.avatarImg.getContext('2d');
     const image = new Image(80, 80);
+
     image.src = this.imgSrc;
     const drawImageCanvas = () => {
       if (ctx) {
@@ -182,9 +184,11 @@ export class RegisterForm extends BaseComponent {
       if (this.fileInput.element.files) {
         const file = this.fileInput.element.files[0];
         const reader = new FileReader();
+
         reader.onloadend = () => {
           const ctx = this.avatarImg.getContext('2d');
           const image = new Image(80, 80);
+
           image.src = String(reader.result);
           const drawImageCanvas = () => {
             if (ctx) {
@@ -237,12 +241,14 @@ export class RegisterForm extends BaseComponent {
     this.addBtn.addEventListener('click', () => {
       this.validationForm();
       if (this.isValid) {
-        const controlField = document.querySelector('.control-field'); // test register
-        const avatar = controlField?.querySelector('canvas'); // test
+        const controlField = document.querySelector('.control-field');
+        const avatar = controlField?.querySelector('canvas');
+
         if (avatar) {
           const ctx = avatar.getContext('2d');
           const image = new Image(40, 40);
-          image.src = this.imgSrc; // test avatar
+
+          image.src = this.imgSrc;
           const drawImageCanvas = () => {
             if (ctx) {
               ctx.clearRect(0, 0, 40, 40);

@@ -12,12 +12,13 @@ export class BestScore extends BaseComponent {
     myBase.init();
     for (let i = 0; i < arr.length; i++) {
       const wrapper = document.createElement('div');
-      wrapper.classList.add('wrapper');
       const info = document.createElement('div');
       const score = document.createElement('div');
       const avatarImg = document.createElement('canvas');
       const ctx = avatarImg.getContext('2d');
       const image = new Image(40, 40);
+
+      wrapper.classList.add('wrapper');
       image.src = arr[i].avatar;
       const drawImageCanvas = () => {
         if (ctx) {
