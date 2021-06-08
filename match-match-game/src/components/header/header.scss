@@ -1,11 +1,10 @@
-$hederColor: rgb(255, 190, 92);
 .header {
   min-height: 64px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: .6em;
-  background-color: $hederColor;
+  background-color: rgb(255, 190, 92);
 };
 .logo {
 
@@ -21,7 +20,7 @@ $hederColor: rgb(255, 190, 92);
     border-bottom: none;
   }
   &__bottom-row {
-    color: $hederColor;
+    color: rgb(255, 190, 92);
     background-color: white;
   }
 }
