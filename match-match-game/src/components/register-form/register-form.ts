@@ -267,7 +267,7 @@ export class RegisterForm extends BaseComponent {
     });
   }
 
-  sendUser(): User {
+  getUser(): User {
     return this.user;
   }
 }
