@@ -44,9 +44,9 @@ export class RegisterForm extends BaseComponent {
     score: 0,
   };
 
-  isValid = false;
+  private isValid = false;
 
-  imgSrc = './images/avatar.png';
+  public imgSrc = './images/avatar.png';
 
   constructor() {
     super('div', ['form-wrapper']);
@@ -83,7 +83,7 @@ export class RegisterForm extends BaseComponent {
     ]);
   }
 
-  createForm(): void {
+  private createForm(): void {
     this.title.element.textContent = 'Register new player';
     this.firstNameLabel.setAttribute('for', 'first-name');
     this.firstNameLabel.textContent = 'First Name';
@@ -111,7 +111,7 @@ export class RegisterForm extends BaseComponent {
     this.element.append(this.title.element, this.avatarWrapper.element, this.form, this.controlForm.element);
   }
 
-  inputValidation(): void {
+  private inputValidation(): void {
     const onlyNum = /^[0-9]+$/;
     const validPerson = /^[а-яА-Яa-zA-Z0-9 ]{1,30}$/;
     const mailValid = /\S+@\S+\.\S+/;
@@ -164,7 +164,7 @@ export class RegisterForm extends BaseComponent {
     });
   }
 
-  drawAvatar(): void {
+  private drawAvatar(): void {
     const ctx = this.avatarImg.getContext('2d');
     const image = new Image(80, 80);
 
@@ -179,7 +179,7 @@ export class RegisterForm extends BaseComponent {
     image.onload = drawImageCanvas;
   }
 
-  addAvatar(): void {
+  private addAvatar(): void {
     this.fileInput.element.addEventListener('input', () => {
       if (this.fileInput.element.files) {
         const file = this.fileInput.element.files[0];
@@ -207,7 +207,7 @@ export class RegisterForm extends BaseComponent {
     });
   }
 
-  validationForm(): void {
+  private validationForm(): void {
     if (
       this.mail.element.matches('.valid') &&
       this.lastName.element.matches('.valid') &&
@@ -217,7 +217,7 @@ export class RegisterForm extends BaseComponent {
     }
   }
 
-  clearForm(): void {
+  private clearForm(): void {
     this.mail.element.value = '';
     this.mail.element.classList.remove('valid');
     this.mail.element.classList.remove('invalid');
@@ -233,7 +233,7 @@ export class RegisterForm extends BaseComponent {
     this.element.remove();
   }
 
-  showForm(): void {
+  public showForm(): void {
     this.createForm();
     this.drawAvatar();
     this.inputValidation();
@@ -273,7 +273,7 @@ export class RegisterForm extends BaseComponent {
     });
   }
 
-  getUser(): User {
+  public getUser(): User {
     return this.user;
   }
 }

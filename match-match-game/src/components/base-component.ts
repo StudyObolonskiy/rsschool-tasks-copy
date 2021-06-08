@@ -1,5 +1,5 @@
 export class BaseComponent {
-  readonly element: HTMLElement;
+  public readonly element: HTMLElement;
 
   constructor(tag: keyof HTMLElementTagNameMap = 'div', styles: string[] = []) {
     this.element = document.createElement(tag);

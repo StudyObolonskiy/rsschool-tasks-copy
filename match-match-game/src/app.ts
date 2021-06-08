@@ -32,7 +32,7 @@ export class App {
     this.bestScore = new BestScore();
   }
 
-  start(): void {
+  public start(): void {
     this.header.add(this.registerForm.imgSrc);
     this.rootElement.appendChild(this.header.element);
     const registerBtn = this.header.element.querySelector('.register-btn');
@@ -56,7 +56,7 @@ export class App {
     });
   }
 
-  sendSettings(): void {
+  private sendSettings(): void {
     const selects = Array.from(this.setting.element.getElementsByTagName('select'));
     selects.forEach((select) => {
       select.addEventListener('change', () => {
@@ -70,7 +70,7 @@ export class App {
     });
   }
 
-  async startGame(): Promise<void> {
+  private async startGame(): Promise<void> {
     const res = await fetch('./images.json');
     const categories: ImageCategoryModel[] = await res.json();
     const cat = categories[this.CATEGORY_NUMBER];
@@ -82,7 +82,7 @@ export class App {
     this.rootElement.appendChild(this.game.element);
   }
 
-  routing(): void {
+  private routing(): void {
     let prevEl = this.about.element;
     const navigationItems = this.header.element.getElementsByClassName('navigation-item');
     (window.onpopstate = () => {

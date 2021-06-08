@@ -6,7 +6,7 @@ export class HeaderNavigation extends BaseComponent {
     super('nav', ['header__navigation']);
   }
 
-  create(): void {
+  public create(): void {
     const navigationItems = document.createElement('ul');
     const navigationItemAbout = document.createElement('li');
     const navigationItemBest = document.createElement('li');

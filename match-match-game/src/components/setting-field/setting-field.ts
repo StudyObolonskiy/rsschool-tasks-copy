@@ -12,7 +12,7 @@ export class SettingField extends BaseComponent {
     this.difficultySelect = new BaseComponent('select', ['difficulty']);
   }
 
-  add(): void {
+  public add(): void {
     const categorySelect = document.createElement('select');
     const cardsNotation = document.createElement('p');
     const difficultyNotation = document.createElement('p');

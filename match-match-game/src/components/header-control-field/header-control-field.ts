@@ -6,7 +6,7 @@ export class ControlField extends BaseComponent {
     super('div', ['control-field']);
   }
 
-  create(avatarSrc: string): void {
+  public create(avatarSrc: string): void {
     const registerBtn = document.createElement('button');
     const startBtn = document.createElement('button');
     const avatarField = document.createElement('div');

@@ -91,7 +91,7 @@ export class DataBase {
     };
   }
 
-  getUsers(): void {
+  public getUsers(): void {
     if (this.database) {
       const transaction = this.database.transaction('users', 'readonly');
       const store = transaction.objectStore('users');

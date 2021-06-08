@@ -11,14 +11,14 @@ export class CardField extends BaseComponent {
     super('div', ['cards-field']);
   }
 
-  clear(): void {
+  public clear(): void {
     this.cards.forEach((card) => {
       card.element.remove();
     });
     this.cards = [];
   }
 
-  addCards(cards: Card[]): void {
+  public addCards(cards: Card[]): void {
     this.cards = cards;
     this.cards.forEach((card) => {
       this.element.appendChild(card.element);

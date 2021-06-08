@@ -39,7 +39,7 @@ export class Game extends BaseComponent {
     this.element.appendChild(this.cardsField.element);
   }
 
-  createTimer(): void {
+  private createTimer(): void {
     this.stopTimer();
     this.stopGame.element.remove();
     this.gameTime = 0;
@@ -49,7 +49,7 @@ export class Game extends BaseComponent {
     }, START_GAME_DELAY);
   }
 
-  startTimer(): void {
+  private startTimer(): void {
     this.stopGame.element.innerHTML = '';
     this.stopGame.element.remove();
     if (timeoutId) {
@@ -67,7 +67,7 @@ export class Game extends BaseComponent {
     run();
   }
 
-  stopTimer(): void {
+  private stopTimer(): void {
     if (timeoutId) {
       clearTimeout(timeoutId);
       timeoutId = null;
@@ -87,7 +87,7 @@ export class Game extends BaseComponent {
     }
   }
 
-  newGame(images: string[]): void {
+  public newGame(images: string[]): void {
     this.numberMatchingCards = 0;
     this.gameRun = true;
     this.cangratulationWrapper.element.innerHTML = '';
@@ -112,7 +112,7 @@ export class Game extends BaseComponent {
     this.cardsField.addCards(cards);
   }
 
-  endGame(): void {
+  public endGame(): void {
     this.stopTimer();
   }
 
@@ -146,7 +146,7 @@ export class Game extends BaseComponent {
     this.isAnimation = false;
   }
 
-  gameFieldSize(size: number): void {
+  public gameFieldSize(size: number): void {
     const cardField = this.cardsField.element;
     if (cardField.classList.contains('small')) {
       cardField.classList.remove('small');
@@ -168,7 +168,7 @@ export class Game extends BaseComponent {
     }
   }
 
-  sendScore(): string {
+  public sendScore(): string {
     return String(this.numberMatchingCards * 100 - this.gameTime * 10);
   }
 }

@@ -4,7 +4,7 @@ import { BaseComponent } from '../base-component';
 const FLIP_CLASS = 'flipped';
 
 export class Card extends BaseComponent {
-  isFlipped = false;
+  public isFlipped = false;
 
   constructor(readonly image: string) {
     super('div', ['card-container']);
@@ -17,12 +17,12 @@ export class Card extends BaseComponent {
     `;
   }
 
-  flipToBack(): Promise<void> {
+  public flipToBack(): Promise<void> {
     this.isFlipped = true;
     return this.flip(true);
   }
 
-  flipToFront(): Promise<void> {
+  public flipToFront(): Promise<void> {
     this.isFlipped = false;
     return this.flip();
   }

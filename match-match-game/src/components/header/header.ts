@@ -14,7 +14,7 @@ export class Header extends BaseComponent {
     this.controlField = new ControlField();
   }
 
-  add(avatarSrc: string): void {
+  public add(avatarSrc: string): void {
     const logo = document.createElement('div');
 
     logo.classList.add('logo');
