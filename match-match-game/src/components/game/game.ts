@@ -8,7 +8,7 @@ const FLIP_DELAY = 3000;
 
 const START_GAME_DELAY = 5000;
 
-let timeoutId: null | number = null;
+let intervalId: null | number = null;
 
 export class Game extends BaseComponent {
   private readonly cardsField: CardField;
@@ -52,25 +52,23 @@ export class Game extends BaseComponent {
   private startTimer(): void {
     this.stopGame.element.innerHTML = '';
     this.stopGame.element.remove();
-    if (timeoutId) {
+    if (intervalId) {
       return;
     }
-    const run = () => {
+    intervalId = window.setInterval(() => {
       const seconds = this.gameTime % 60;
       const minutes = (this.gameTime / 60) % 60;
-      const strTimer = `Minutes: ${Math.trunc(minutes)} seconds: ${seconds}`;
+      const timerText = `Minutes: ${Math.trunc(minutes)} seconds: ${seconds}`;
 
-      this.timerField.element.textContent = strTimer;
+      this.timerField.element.textContent = timerText;
       ++this.gameTime;
-      timeoutId = window.setTimeout(run, 1000);
-    };
-    run();
+    }, 1000);
   }
 
   private stopTimer(): void {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-      timeoutId = null;
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
       const cangratulation = document.createElement('div');
       const cangratulationNotation = document.createElement('p');
       const cangratulationLink = document.createElement('a');
@@ -168,7 +166,7 @@ export class Game extends BaseComponent {
     }
   }
 
-  public sendScore(): string {
+  public scoreCalculation(): string {
     return String(this.numberMatchingCards * 100 - this.gameTime * 10);
   }
 }
