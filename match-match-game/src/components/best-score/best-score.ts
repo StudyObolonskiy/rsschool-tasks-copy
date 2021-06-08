@@ -8,9 +8,9 @@ export class BestScore extends BaseComponent {
     super('main', ['best-score']);
   }
 
-  public showPage(arr: Array<User>): void {
+  public showPage(usersArray: Array<User>): void {
     myBase.init();
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < usersArray.length; i++) {
       const wrapper = document.createElement('div');
       const info = document.createElement('div');
       const score = document.createElement('div');
@@ -19,7 +19,7 @@ export class BestScore extends BaseComponent {
       const image = new Image(40, 40);
 
       wrapper.classList.add('wrapper');
-      image.src = arr[i].avatar;
+      image.src = usersArray[i].avatar;
       const drawImageCanvas = () => {
         if (ctx) {
           avatarImg.width = 40;
@@ -28,8 +28,8 @@ export class BestScore extends BaseComponent {
         }
       };
       image.onload = drawImageCanvas;
-      info.innerHTML = `${arr[i].firstName} ${arr[i].lastName}<br> ${arr[i].email}`;
-      score.textContent = `Score: ${arr[i].score}`;
+      info.innerHTML = `${usersArray[i].firstName} ${usersArray[i].lastName}<br> ${usersArray[i].email}`;
+      score.textContent = `Score: ${usersArray[i].score}`;
       wrapper.append(avatarImg, info, score);
       this.element.append(wrapper);
     }
