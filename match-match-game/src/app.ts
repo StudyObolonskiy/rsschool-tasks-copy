@@ -5,6 +5,7 @@ import { Header } from './components/header/header';
 import { RegisterForm } from './components/register-form/register-form';
 import { Setting } from './components/setting/setting';
 import { ImageCategoryModel } from './models/image-category-model';
+import { User } from "./models/user";
 
 export class App {
   private readonly about: About;
@@ -22,6 +23,79 @@ export class App {
   private CATEGORY_NUMBER = 0;
 
   private CARDS_NUMBERS = 2;
+
+  private readonly usersArray: User[] = [
+    {
+      firstName: 'John',
+      lastName: 'Smith',
+      email: 'j.s@example.com',
+      score: 1700,
+      avatar: './images/animals/32.png',
+    },
+    {
+      firstName: 'Kevin',
+      lastName: 'Johnson',
+      email: 'k.j@example.com',
+      score: 1700,
+      avatar: './images/animals/28.png',
+    },
+    {
+      firstName: 'Adam',
+      lastName: 'Williams',
+      email: 'a.w@example.com',
+      score: 1700,
+      avatar: './images/animals/25.png',
+    },
+    {
+      firstName: 'Ben',
+      lastName: 'Jones',
+      email: 'b.j@example.com',
+      score: 1700,
+      avatar: './images/animals/26.png',
+    },
+    {
+      firstName: 'Andrew',
+      lastName: 'Brown',
+      email: 'a.b@example.com',
+      score: 1700,
+      avatar: './images/animals/27.png',
+    },
+    {
+      firstName: 'Samuel',
+      lastName: 'Davis',
+      email: 's.d@example.com',
+      score: 1700,
+      avatar: './images/animals/29.png',
+    },
+    {
+      firstName: 'Fred',
+      lastName: 'Miller',
+      email: 'f.m@example.com',
+      score: 1700,
+      avatar: './images/animals/30.png',
+    },
+    {
+      firstName: 'Martin',
+      lastName: 'Wilson',
+      email: 'm.w@example.com',
+      score: 1700,
+      avatar: './images/animals/31.png',
+    },
+    {
+      firstName: 'Gordon',
+      lastName: 'Moore',
+      email: 'g.m@example.com',
+      score: 1700,
+      avatar: './images/animals/24.png',
+    },
+    {
+      firstName: 'Bill',
+      lastName: 'Taylor',
+      email: 'b.t@example.com',
+      score: 1700,
+      avatar: './images/animals/22.png',
+    },
+  ]
 
   constructor(private readonly rootElement: HTMLElement) {
     this.game = new Game();
@@ -102,78 +176,7 @@ export class App {
             prevEl.remove();
             prevEl = this.bestScore.element;
             this.bestScore.clear();
-            this.bestScore.showPage([
-              {
-                firstName: 'John',
-                lastName: 'Smith',
-                email: 'j.s@example.com',
-                score: 1700,
-                avatar: './images/animals/32.png',
-              },
-              {
-                firstName: 'Kevin',
-                lastName: 'Johnson',
-                email: 'k.j@example.com',
-                score: 1700,
-                avatar: './images/animals/28.png',
-              },
-              {
-                firstName: 'Adam',
-                lastName: 'Williams',
-                email: 'a.w@example.com',
-                score: 1700,
-                avatar: './images/animals/25.png',
-              },
-              {
-                firstName: 'Ben',
-                lastName: 'Jones',
-                email: 'b.j@example.com',
-                score: 1700,
-                avatar: './images/animals/26.png',
-              },
-              {
-                firstName: 'Andrew',
-                lastName: 'Brown',
-                email: 'a.b@example.com',
-                score: 1700,
-                avatar: './images/animals/27.png',
-              },
-              {
-                firstName: 'Samuel',
-                lastName: 'Davis',
-                email: 's.d@example.com',
-                score: 1700,
-                avatar: './images/animals/29.png',
-              },
-              {
-                firstName: 'Fred',
-                lastName: 'Miller',
-                email: 'f.m@example.com',
-                score: 1700,
-                avatar: './images/animals/30.png',
-              },
-              {
-                firstName: 'Martin',
-                lastName: 'Wilson',
-                email: 'm.w@example.com',
-                score: 1700,
-                avatar: './images/animals/31.png',
-              },
-              {
-                firstName: 'Gordon',
-                lastName: 'Moore',
-                email: 'g.m@example.com',
-                score: 1700,
-                avatar: './images/animals/24.png',
-              },
-              {
-                firstName: 'Bill',
-                lastName: 'Taylor',
-                email: 'b.t@example.com',
-                score: 1700,
-                avatar: './images/animals/22.png',
-              },
-            ]);
+            this.bestScore.showPage(this.usersArray);
             this.rootElement.appendChild(this.bestScore.element);
           },
         },
