@@ -46,7 +46,7 @@ export class RegisterForm extends BaseComponent {
 
   isValid = false;
 
-  imgSrc = './images/avatar.png'; // test avatar
+  imgSrc = './images/avatar.png';
 
   constructor() {
     super('div', ['form-wrapper']);
