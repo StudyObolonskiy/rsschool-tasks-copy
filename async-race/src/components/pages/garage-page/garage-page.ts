@@ -32,6 +32,8 @@ export class GaragePage extends BaseComponent {
 
   private maxPageNumber = 1;
 
+  private readonly generateCarsNumber = 100;
+
   constructor() {
     super('div', ['garage']);
     this.element.innerHTML = '<h1>GARAGE PAGE</h1>';
@@ -41,7 +43,7 @@ export class GaragePage extends BaseComponent {
     this.createCarForm = new CarForm(['create-car-form'], 'CREATE CAR');
     this.generateButton = new Button(['generate-btn'], 'GENERATE CARS');
     this.generateButton.onClick(() => {
-      for (let i = 1; i < 101; i++) {
+      for (let i = 1; i <= this.generateCarsNumber; i++) {
         this.generateRandomCars();
       }
     });
@@ -76,7 +78,7 @@ export class GaragePage extends BaseComponent {
     this.removeCarFromPage();
   }
 
-  async init(): Promise<void> {
+  private async init(): Promise<void> {
     this.cars = await garageService.getCars(this.pageNumber);
     this.renderCars(this.cars);
     await this.getMaxPages();
@@ -105,7 +107,7 @@ export class GaragePage extends BaseComponent {
 
   private async getMaxPages(): Promise<void> {
     this.allCarsNumber = await garageService.getTotalCarsNumber();
-    this.maxPageNumber = Math.ceil(this.allCarsNumber / 10);
+    this.maxPageNumber = Math.ceil(this.allCarsNumber / garageService.carsLimit);
   }
 
   private pagination() {
@@ -132,6 +134,7 @@ export class GaragePage extends BaseComponent {
   }
 
   private async generateRandomCars() {
+    const hexSymbolsNumber = 6;
     const hexSymbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
     const concernsArray = ['Scoda', 'Honda', 'Hyundai', 'BMW', 'Lada', 'WV', 'Porsche', 'Toyota'];
     const modelsArray = ['Karoq', 'Civic', 'Elantra', '5-Series', 'Granta', 'Passat', 'Cayman', 'Camry'];
@@ -139,7 +142,7 @@ export class GaragePage extends BaseComponent {
     const model = modelsArray[Math.floor(Math.random() * modelsArray.length)];
     let color = '#';
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < hexSymbolsNumber; i++) {
       color += hexSymbols[Math.floor(Math.random() * hexSymbols.length)];
     }
     await garageService.createCar({ name: `${concern} ${model}`, color: `${color}` });
