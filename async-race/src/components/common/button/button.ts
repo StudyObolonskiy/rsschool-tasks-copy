@@ -4,8 +4,7 @@ export class Button extends BaseComponent {
   constructor(classList: string[], title: string, attr?: [string, string][]) {
     super('button', classList);
     if (attr) {
-      attr.forEach((attribut) => {
-        const [name, value] = attribut;
+      attr.forEach(([name, value]) => {
         this.element.setAttribute(name, value);
       });
     }
