@@ -2,12 +2,16 @@ import { CarModel, CarModelWithId } from '../models/car';
 import { RestService, restService } from './RestService';
 
 export class GarageService {
+  public carsLimit = 7;
+
+  private readonly defaultCarsNumber = 4;
+
   constructor(private restfulService: RestService) {}
 
   public async getCars(page = 1): Promise<CarModelWithId[]> {
     const queryParams = {
       _page: page,
-      _limit: 10,
+      _limit: this.carsLimit,
     };
     const response = await this.restfulService.get('/garage', queryParams);
     const result = await response.json();
@@ -17,14 +21,14 @@ export class GarageService {
   public async getTotalCarsNumber(): Promise<number> {
     const queryParams = {
       _page: 1,
-      _limit: 10,
+      _limit: this.carsLimit,
     };
     const response = await this.restfulService.get('/garage', queryParams);
     const total = response.headers.get('X-Total-Count');
     if (total) {
       return +total;
     }
-    return 4;
+    return this.defaultCarsNumber;
   }
 
   public async createCar(car: CarModel): Promise<CarModelWithId> {
