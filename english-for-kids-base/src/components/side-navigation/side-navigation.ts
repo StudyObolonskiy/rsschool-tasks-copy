@@ -13,8 +13,10 @@ export class SideNavigation extends BaseComponent {
     const res = await fetch('./cards.json');
     const data = await res.json();
     const categories: string[] = data[0];
+
     categories.forEach((category, index) => {
       const listItem = new BaseComponent('li', ['navigation-item']);
+
       listItem.element.setAttribute('data-category', `${index}`);
       listItem.element.textContent = `${category}`;
       listItem.element.addEventListener('click', cb);

@@ -123,8 +123,9 @@ export class GameField extends BaseComponent {
   }
 
   private renderWinPopup(cb: () => void) {
-    this.successSound.play();
     const winPopup = new BaseComponent('div', ['win-popup']);
+
+    this.successSound.play();
     winPopup.element.textContent = 'You did a great job! Not a single mistake. Well done, congratulations!';
     this.element.append(winPopup.element);
     setTimeout(() => {
@@ -134,8 +135,9 @@ export class GameField extends BaseComponent {
   }
 
   private renderFailPopup(cb: () => void) {
-    this.failSound.play();
     const failPopup = new BaseComponent('div', ['fail-popup']);
+
+    this.failSound.play();
     failPopup.element.textContent = `
       Don't be upset you made only ${this.mistakeNumber} mistake(s).
       Next time you will definitely succeed!

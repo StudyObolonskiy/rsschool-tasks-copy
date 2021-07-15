@@ -33,6 +33,7 @@ export class App {
   public renderStartPage(): void {
     document.body.addEventListener('click', (event: Event) => {
       const target = event.target as HTMLElement;
+
       if (this.sideNavigation.element.matches('.show') && !target.closest('.side-navigation') && !target.closest('.burger-btn')) {
         this.toggleMenu();
       }
@@ -57,6 +58,7 @@ export class App {
     this.sideNavigation.createCategoryList((event) => {
       const listItem = event.target as HTMLElement;
       const categoryNumber = listItem.getAttribute('data-category');
+
       this.categoryNumber = categoryNumber ? +categoryNumber : 1;
       this.toggleMenu();
       if (categoryNumber) {
@@ -81,11 +83,13 @@ export class App {
     const res = await fetch('./cards.json');
     const data = await res.json();
     const categories: string[] = data[0];
+
     this.main.element.innerHTML = '';
     this.showActiveLink(`${categories.indexOf('Main-page')}`);
     for (let i = 1; i < data.length; i++) {
       const card: CardModel[] = data[i];
       const mainCard = new MainCard();
+
       mainCard.element.setAttribute('data-category', `${i}`);
       mainCard.renderCard(card[0].image, categories[i]);
       mainCard.onClick(() => {
@@ -112,6 +116,7 @@ export class App {
     const data = await res.json();
     const cards: CardModel[] = data[categoryNumber];
     const trainField = new BaseComponent('div', ['train']);
+
     this.main.element.innerHTML = '';
     for (let i = 0; i < cards.length; i++) {
       const imageSource = cards[i].image;
@@ -119,11 +124,13 @@ export class App {
       const translationWord = cards[i].translation;
       const audioCource = cards[i].audioSrc;
       const card = new Card();
+
       card.element.setAttribute('data-word', englishWord);
       card.renderCard(imageSource, englishWord, translationWord);
       card.cardOnclick(() => {
         const audio = new Audio(audioCource);
         const cardElement = card.element.firstChild as HTMLElement;
+
         if (!cardElement.classList.contains('turn')) {
           audio.play();
         }
@@ -141,6 +148,7 @@ export class App {
 
   private showActiveLink(category: string) {
     const listItems = this.sideNavigation.element.querySelectorAll('li');
+
     listItems.forEach((item) => {
       item.classList.remove('active-link');
       if (item.getAttribute('data-category') === category) {

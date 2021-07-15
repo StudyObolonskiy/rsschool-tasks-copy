@@ -6,6 +6,7 @@ export class Input {
     this.element.classList.add(...classList);
     attr.forEach((attribut) => {
       const [name, value] = attribut;
+
       this.element.setAttribute(name, value);
     });
   }
