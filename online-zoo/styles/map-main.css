@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+h1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.tooltip {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0 15px 10px;
+  width: 160px;
+  border: 1px solid black;
+  border-radius: 6px;    
+  background-color: white;
+  color: black;
+  visibility: hidden;
+  z-index: 1;
+  transition: all 0.1s ease-out;
+}
+.tooltip__title,
+.tooltip__hobitat,
+.tooltip__btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight:normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.tooltip__btn {
+  margin-top: 16px;
+  min-width: 135px;
+  text-align: center;
+  color: #4b9200;
+  background-color: #f1f3f2;
+  cursor: pointer;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -6%;
+  left: 50%;
+  margin-left: -30px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  transform: rotate(45deg);
+  background-color: white;
+}
+.animal_active ~ .tooltip {
+  visibility: visible;
+}
+.map__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 942px;
+  padding-top: 104px;
+  padding-bottom: 121px;
+  background-color: #eaf7fe;
+  overflow: hidden;
+}
+.map {
+  position: relative;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 1084px;
+}
+.map__img {
+  width: 100%;
+}
+.unated-states {
+  position: absolute;
+  left: 13%;
+  top: 47.03%;
+}
+.los-angeles {
+  position: absolute;
+  left: 15.5%;
+  top: 52%;
+}
+.eagles {
+  position: absolute;
+  left: 8.75%;
+  top: 51.5%;
+  z-index: 2;
+}
+.top-eagle__img {
+  cursor: pointer;
+}
+.eagle__img {
+  position: absolute;
+  left: 60%;
+  top: 70%;
+  cursor: pointer;
+}
+.eagles__tooltip {
+  top: 130%;
+  left: -50%;
+}
+/* .eagles:hover .eagles__tooltip {
+  visibility: visible;
+} */
+.eagles-marker {
+  position: absolute;
+  left: 100%;
+  top: -20%;
+}
+.eagles:active svg path {
+ fill: #f9804b;
+}
+.florida {
+  position: absolute;
+  left: 25.5%;
+  top: 56%;
+}
+.crocodile {
+  position: absolute;
+  left: 23%;
+  top: 58%;
+}
+.crocodile__img {
+  cursor: pointer;
+}
+.crocodile__tooltip {
+  top: 130%;
+  left: -25%;
+}
+/* .crocodile:hover .crocodile__tooltip {
+  visibility: visible;
+} */
+.crodile-marker {
+  position: absolute;
+  left: 3%;
+  top: -150%;
+}
+.crocodile:active svg path {
+  fill: #f9804b;
+}
+.congo {
+  position: absolute;
+  left: 52%;
+  top: 68%;
+
+}
+.gorilla {
+  position: absolute;
+  left: 50%;
+  top: 70%;  
+}
+.gorilla__img {
+  cursor: pointer;
+}
+.gorilla__tooltip {
+  top: 110%;
+  left: -60%;
+}
+/* .gorilla:hover .gorilla__tooltip {
+  visibility: visible;
+} */
+.gorilla-marker {
+  position: absolute;
+  left: 0;
+  top: -80%;
+}
+.gorilla:active svg path {
+  fill: #f9804b;
+}
+.china {
+  position: absolute;
+  right: 26.5%;
+  top: 51%;
+}
+.pandas-map {
+  position: absolute;
+  right: 21%;
+  top: 55%;
+}
+.pandas-map__img {
+  cursor: pointer;
+}
+.panda-map__img {
+  position: absolute;
+  right: 10%;
+  bottom: 120%;
+  cursor: pointer;
+}
+.pandas-map__tooltip {
+  top: 110%;
+  left: -60%;
+}
+/* .pandas-map:hover .pandas-map__tooltip {
+  visibility: visible;
+} */
+.pandas-marker {
+  position: absolute;
+  right: -45%;
+  top: -40%;
+}
+.panda-marker {
+  position: absolute;
+  right: -50%;
+  top: -135%;
+}
+.pandas-map:active svg path {
+  fill: #f9804b;
+}
+.btn__wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+}
+.scale__btns {
+  position: sticky;
+  top: 100%;
+  bottom: 20px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+.plus__btn,
+.minus__btn {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.plus__btn:hover path,
+.minus__btn:hover path{
+  fill: #f9804b;
+}
+.plus__btn:active path,
+.minus__btn:active path{
+  fill: #4b9200;
+}
+.plus__btn:active,
+.minus__btn:active{
+  border: 1px solid #4b9200;
+}
+.plus__btn {
+  margin-bottom: 10px;
+}
+@media (max-width: 1500px) {
+
+  .map__wrapper {
+    padding-top: 90px;
+    padding-bottom: 39px;
+    height: 749px;
+  }
+  .map {
+    width: 938px;
+  }
+  /* .map__img {
+    width: 938px;
+  } */
+  .area {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .los-angeles {
+    top: 54%;
+  }
+  .animal-marker svg{
+    width: 22px;
+    height: 27px;
+  }
+  .animal {
+    transform: scale(0.9);
+  }
+  .eagles-marker {
+    left: 97%;
+    top: 0%;
+  }
+  .crodile-marker {
+    top: -118%;
+  }
+  .gorilla-marker {
+    top: -70%;
+  }
+  .pandas-marker {
+    right: -25%;
+    top: -30%;
+  }
+  .panda-marker {
+    right: -43%;
+    top: -114%;
+  }
+  .scale__btns {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }  
+
+}
+@media (max-width: 990px) {
+
+  .map__wrapper {
+    padding-top: 91px;
+    padding-bottom: 26px;
+    height: 510px;
+  }
+  .map {
+    width: 594px;
+  }
+  /* .map__img {
+    width: 594px;
+  } */
+  .area {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .los-angeles {
+    top: 52%;
+  }
+  .animal-marker svg{
+    width: 14px;
+    height: 17px;
+  }
+  .animal {
+    transform: scale(0.57);
+  }
+  .eagles {
+    left: 6.75%;
+    top: 48.5%;
+  }
+  .eagle__img {
+    left: 36%;
+    top: 60%;
+  }
+  .eagles-marker {
+    left: 85%;
+    top: 20%;
+  }
+  .crocodile {
+    left: 20%;
+  }
+  .crodile-marker {
+    top: -63%;
+    left: 27%;
+  }
+  .gorilla {
+    left: 48%;
+    top: 69%;
+  }
+  .gorilla-marker {
+    top: -31%;
+    left: 24%;
+  }
+  .pandas-map {
+    right: 20%;
+    top: 53%;
+  }
+  .panda-map__img {
+    bottom: 70%;
+  }
+  .pandas-marker {
+    right: 0%;
+    top: 0%;
+  }
+  .panda-marker {
+    right: -13%;
+    top: -53%;
+  }
+  .scale__btns {
+    display: none;
+  }
+
+}
+@media (max-width: 630px) {
+
+  .map__wrapper {
+    padding-top: 73px;
+    padding-bottom: 18px;
+    height: 360px;
+  }
+  .map {
+    width: 406px;
+    margin-left: 35px;
+  }
+  /* .map__img {
+    width: 406px;
+  } */
+  .area {
+    font-size: 5.6px;
+    line-height: 7px;
+  }
+  .animal-marker svg{
+    width: 9.6px;
+    height: 12px;
+  }
+  .animal {
+    transform: scale(0.375);
+  }
+  .eagles {
+    left: 5.5%;
+    top: 46.5%;
+  }
+  .eagle__img {
+    left: 20%;
+    top: 45%;
+  }
+  .eagles-marker {
+    left: 70%;
+  }
+  .crocodile {
+    left: 17%;
+    top: 56%;
+  }
+  .crodile-marker {
+    top: -32%;
+    left: 34%;
+  }
+  .gorilla {
+    left: 46%;
+    top: 66%;
+  }
+  .gorilla-marker {
+    top: -10%;
+    left: 35%;
+  }
+  .pandas-map {
+    right: 19%;
+    top: 50%;
+  }
+  .panda-map__img {
+    bottom: 43%;
+  }
+  .pandas-marker {
+    right: 15%;
+    top: 15%;
+  }
+  .panda-marker {
+    right: 0%;
+    top: -23%;
+  }
+
+}

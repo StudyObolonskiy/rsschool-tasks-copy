@@ -1,0 +1,31 @@
+@import "reset.css";
+@import "header.css";
+@import "panda-main.css";
+@import "footer.css";
+@import "adaptive.css";
+.donate__wrapper {
+  background: url(../assets/crocodile_bg.png) no-repeat center,  #333b41;
+  background-size: cover;
+}
+@media (max-width: 990px) {
+
+  .donate__wrapper {
+    min-height: 293px;
+    background: url(../assets/crocodile_bg.png) no-repeat top right 30%,  #333b41;
+    background-size: auto;
+  }
+
+}
+@media (max-width: 630px) {
+
+  .donate__wrapper {
+    min-height: 220px;
+  }
+  .mob_croc {
+    display: flex;
+    width: 319px;
+    height: 193px;
+    background: url(../assets/mob-croc.jpg) no-repeat center;
+  }
+
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/donate.css">
+  <script src="script.js" defer></script>
+  <script src="donate.js" defer></script>
+  <title>Donate</title>
+</head>
+<body>
+  <h1>PetStory Online</h1>
+  <div class="header__wrapper">
+    <div class="content__wrapper">
+      <header>
+        <a class="logo__link" href="petstory.html">
+          <div class="logo">
+          <div class="logo__img"></div>
+          </div>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav__list">
+            <li class="header__nav__item"><a href="petstory.html">About</a></li>
+            <li class="header__nav__item"><a href="map.html">Map</a></li>
+            <li class="header__nav__item"><a href="zoos/panda.html">Zoos</a></li>
+            <li class="header__nav__item"><a href="" onclick="return false">Contact Us</a></li>
+            <li class="header__nav__item"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></li>
+          </ul>
+        </nav>
+        <div class="menu-btn">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </header>
+    </div>
+    <nav class="mobile__nav">
+      <ul class="mobile__nav__list">
+        <li class="mobile__nav__item"><a href="petstory.html">About</a></li>
+        <li class="mobile__nav__item"><a href="map.html">Map</a></li>
+        <li class="mobile__nav__item"><a href="zoos/panda.html">Zoos</a></li>
+        <li class="mobile__nav__item"><a href="" onclick="return false">Contact Us</a></li>
+        <li class="mobile__nav__item mobile__nav_active"><a href="donate.html">Donate</a></li>
+        <li class="mobile__nav__item"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="head-panda__wrapper">
+    <div class="head-panda"></div>
+  </div>
+  <div class="donate__wrapper">
+    <div class="content__wrapper">
+      <main class="donate">
+        <div class="donat__notation">
+          <p class="donat__notation__title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</p>
+          <p class="donat__notation__descr">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
+        </div>
+        <p class="donate__info">Donation Information</p>
+        <div class="feed-friend">
+          <p class="feed-friend__title">Pick and feed a friend</p>
+          <p class="feed-friend__subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+          <div class="feed-friend__info">
+            <div class="diet">
+              <p class="diet__count">4</p>
+              <p class="diet__descr">Panda diet for the day.</p>
+            </div>
+            <div class="marker"></div>
+            <div class="diet__animal">
+              <img src="assets/diet-panda.svg" alt="Panda">
+            </div>
+          </div>
+          <div class="amount">
+            <p class="amount__title">Amount</p>
+            <div class="amount__scale">
+              <div class="amount__scale__line"></div>
+              <div class="amount__item">
+                <label>
+                  <input class="amount__btn" type="radio" name="amounty" value="5000">
+                  <div class="point"></div>
+                  <p class="amount__value">$5000</p>
+                </label>
+              </div>
+              <div class="amount__item">
+                <label>
+                  <input class="amount__btn" type="radio" name="amounty" value="2000">
+                  <div class="point"></div>
+                  <p class="amount__value">$2000</p>
+                </label>
+              </div>
+              <div class="amount__item">
+                <label>
+                  <input class="amount__btn" type="radio" name="amounty" value="1000">
+                  <div class="point"></div>
+                  <p class="amount__value">$1000</p>
+                </label>
+              </div>
+              <div class="amount__item">
+                <label>
+                  <input class="amount__btn" type="radio" name="amounty" value="500">
+                  <div class="point"></div>
+                  <p class="amount__value">$500</p>
+                </label>
+              </div>
+              <div class="amount__item">
+                <label>
+                  <input class="amount__btn" type="radio" name="amounty" value="250">
+                  <div class="point"></div>
+                  <p class="amount__value">$250</p>
+                </label>
+              </div>
+              <div class="amount__item">
+                <label>
+                  <input class="amount__btn amount__btn_checked" type="radio" name="amounty" value="100">
+                  <div class="point"></div>
+                  <p class="amount__value">$100</p>
+                </label>
+              </div>
+              <div class="amount__item">
+                <label>
+                  <input class="amount__btn" type="radio" name="amounty" value="50">
+                  <div class="point"></div>
+                  <p class="amount__value">$50</p>
+                </label>
+              </div>
+              <div class="amount__item">
+                <label>
+                  <input class="amount__btn" type="radio" name="amounty" value="25">
+                  <div class="point"></div>
+                  <p class="amount__value">$25</p>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="another-amount">
+            <input class="another-amount__field" type="number" maxlength="4" min="1" max="9999" placeholder="Another amount" value="100">
+            <div class="sign">$</div>
+          </div>
+          <div class="period">
+            <div class="period__item">
+              <input class="period__btn" id="mountly" type="radio" name="period" value="mountly">
+              <label class="period__value" for="mountly">Mountly</label>
+            </div>             
+            <div class="period__item">
+              <input class="period__btn" id="once" type="radio" name="period" value="once">
+              <label class="period__value" for="once">Once</label>
+            </div>
+          </div>
+          <button class="feed-friend__btn">Feed a friend now</button>
+          <p class="feed-friend__note">Share with your friends on social networks </p>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="footer__wrapper">
+    <div class="content__wrapper">
+      <footer class="footer">
+        <div class="head__items">
+          <div class="footer__logo">
+            <a href="petstory.html"><img src="assets/pet-logo.svg" alt="Logo"></a>
+          </div>
+          <div class="mobile-logo">
+            <a href="petstory.html">PetStory online</a>
+            <img class="bamboo" src="assets/bamboo.svg" alt="">
+          </div>
+          <div class="footer__subscribe">
+            <p class="subscribe__title">Subscribe to our news</p>
+            <form class="subscribe__form" action="">
+              <input class="subscribe__email" type="email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+.)+[A-z]{2,4}$" required placeholder="Enter your email">
+              <input class="subscribe__btn" type="submit" value="Submit" onclick="return false">
+            </form>
+          </div>
+        </div>
+        <button class="footer__btn"><a href="donate.html">donate for volunteers</a></button>
+        <div class="bottom__items">
+          <div class="social-links">
+            <a href="https://www.facebook.com/" class="social__link" >
+              <div class="social__icon">
+                <img src="assets/facebook.svg" alt="">
+              </div>
+              <p class="social__title">Facebook</p>
+            </a>
+            <a href="https://twitter.com/" class="social__link">
+              <div class="social__icon">
+                <img src="assets/twitter.svg" alt="">
+              </div>
+              <p class="social__title">Twitter</p>
+            </a>
+            <a href="http://instagram.com/" class="social__link">
+              <div class="social__icon">
+                <img src="assets/instagram.svg" alt="">
+              </div>
+              <p class="social__title">Instagram</p>
+            </a>
+            <a href="https://www.youtube.com/" class="social__link">
+              <div class="social__icon">
+                <img src="assets/youtube.svg" alt="">
+              </div>
+              <p class="social__title">YouTube</p>
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav__list">
+              <li class="footer__nav__item"><a href="petstory.html">About</a></li>
+              <li class="footer__nav__item"><a href="map.html">Map</a></li>
+              <li class="footer__nav__item"><a href="zoos/panda.html">Zoos</a></li>
+              <li class="footer__nav__item"><a href="" onclick="return false">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="copypast">
+            <p>Designed by Alisa Samborskaya</p>
+            <p>©RSSchool & ©Yem Digital 2021</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/petstory.css">
+  <script src="script.js" defer></script>
+  <title>PetStory Online</title>
+</head>
+<body>
+  <h1>PetStory Online</h1>
+  <div class="top-section__wrapper">
+    <div class="header__wrapper">
+      <div class="content__wrapper">
+        <header>
+          <a class="logo__link" href="petstory.html">
+            <div class="logo">
+            <div class="logo__img"></div>
+            </div>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav__list">
+              <li class="header__nav__item header__nav_active"><a href="petstory.html">About</a></li>
+              <li class="header__nav__item"><a href="map.html">Map</a></li>
+              <li class="header__nav__item"><a href="zoos/panda.html">Zoos</a></li>
+              <li class="header__nav__item"><a href="" onclick="return false">Contact Us</a></li>
+              <li class="header__nav__item"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></li>
+            </ul>
+          </nav>
+          <div class="menu-btn">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </header>        
+      </div>
+      <nav class="mobile__nav">
+        <ul class="mobile__nav__list">
+          <li class="mobile__nav__item mobile__nav_active"><a href="petstory.html">About</a></li>
+          <li class="mobile__nav__item"><a href="map.html">Map</a></li>
+          <li class="mobile__nav__item"><a href="zoos/panda.html">Zoos</a></li>
+          <li class="mobile__nav__item"><a href="" onclick="return false">Contact Us</a></li>
+          <li class="mobile__nav__item"><a href="donate.html">Donate</a></li>
+          <li class="mobile__nav__item"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="favorite__wrapper">
+      <div class="content__wrapper">
+        <section class="favorite">
+          <div class="favorite__sublayer">
+            <p class="favorite__title">Watch your <span>favorite</span> animal online</p>
+          </div>          
+          <button class="favorite__btn"><a href="zoos/panda.html">watch online</a></button>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="backstage__wrapper">
+    <div class="content__wrapper">
+      <section class="backstage">
+        <div class="backstage__img">
+          <img src="assets/bamboo-cap.jpg" alt="Bamboo cap">
+        </div>
+        <div class="backstage__descr">
+          <h2 class="backstage__title">The Backstage of the Wilderness World.</h2>
+          <p class="backstage__subtitle">The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
+          <p class="how-work__title">How it works </p>
+          <p class="how-work__descr">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="pets__wrapper">    
+    <div class="pets__slider">      
+      <div class="arrow-left__btn"><img class="arrow__btn__img" src="assets/arrow-left.svg" alt=""></div>
+      <div class="arrow-right__btn"><img class="arrow__btn__img" src="assets/arrow-right.svg" alt=""></div>
+      <div class="pets__card__wrapper">
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/giant-pandas.png" alt="Giant pandas">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">giant Pandas</p>
+              <p class="overlay__hobitat">Native to Southwest China</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">giant Pandas</p>
+              <p class="pets__habitat">Native to Southwest China</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/eagles.png" alt="Eagles">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Eagles</p>
+              <p class="overlay__hobitat">Native to South America</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Eagles</p>
+              <p class="pets__habitat">Native to South America</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/gorillas.png" alt="Gorillas">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Gorillas</p>
+              <p class="overlay__hobitat">Native to Congo</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Gorillas</p>
+              <p class="pets__habitat">Native to Congo</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/lions.jpg" alt="Lions">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Lions</p>
+              <p class="overlay__hobitat">Native to Africa</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Lions</p>
+              <p class="pets__habitat">Native to Africa</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/zebras.jpg" alt="Giant pandas">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Zebras</p>
+              <p class="overlay__hobitat">Native to Africa</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Zebras</p>
+              <p class="pets__habitat">Native to Africa</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/honey-badger.jpg" alt="Honey Badger">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Honey Badger</p>
+              <p class="overlay__hobitat">Native to Africa and Azia</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Honey Badger</p>
+              <p class="pets__habitat">Native to Africa and Azia</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="pets__card__wrapper">
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/two-toed-sloth.png" alt="Two-toed sloth">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Two-toed Sloth</p>
+              <p class="overlay__hobitat">Mesoamerica, South America</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Two-toed Sloth</p>
+              <p class="pets__habitat">Mesoamerica, South America</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/cheetahs.png" alt="Cheetahs">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">cheetahs</p>
+              <p class="overlay__hobitat">Native to Africa</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">cheetahs</p>
+              <p class="pets__habitat">Native to Africa</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/penguins.png" alt="Penguins">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Penguins</p>
+              <p class="overlay__hobitat">Native to Antarctica</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Penguins</p>
+              <p class="pets__habitat">Native to Antarctica</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/alligators.png" alt="Alligator">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Alligators</p>
+              <p class="overlay__hobitat">Native to Southeastern U. S.</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Alligators</p>
+              <p class="pets__habitat">Native to Southeastern U. S.</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/european-bison.jpg" alt="european bison">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">European bison</p>
+              <p class="overlay__hobitat">Native to Europe</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">European bison</p>
+              <p class="pets__habitat">Native to Europe</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/camel.jpg" alt="bactrian camel">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">bactrian camel</p>
+              <p class="overlay__hobitat">Native to Asia</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">bactrian camel</p>
+              <p class="pets__habitat">Native to Asia</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pets-mobile__wrapper">
+      <div class="pets__mobile">
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/giant-pandas.png" alt="Giant pandas">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">giant Pandas</p>
+              <p class="overlay__hobitat">Native to Southwest China</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">giant Pandas</p>
+              <p class="pets__habitat">Native to Southwest China</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/eagles.png" alt="Eagles">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Eagles</p>
+              <p class="overlay__hobitat">Native to South America</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Eagles</p>
+              <p class="pets__habitat">Native to South America</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/gorillas.png" alt="Gorillas">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Gorillas</p>
+              <p class="overlay__hobitat">Native to Congo</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Gorillas</p>
+              <p class="pets__habitat">Native to Congo</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card pets__card_active">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/alligators.png" alt="Alligator">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Alligators</p>
+              <p class="overlay__hobitat">Native to Southeastern U. S.</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Alligators</p>
+              <p class="pets__habitat">Native to Southeastern U. S.</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/two-toed-sloth.png" alt="Two-toed sloth">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Two-toed Sloth</p>
+              <p class="overlay__hobitat">Mesoamerica, South America</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Two-toed Sloth</p>
+              <p class="pets__habitat">Mesoamerica, South America</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/banana-bamboo_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/cheetahs.png" alt="Cheetahs">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">cheetahs</p>
+              <p class="overlay__hobitat">Native to Africa</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">cheetahs</p>
+              <p class="pets__habitat">Native to Africa</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+        <div class="pets__card">
+          <div class="pets__card__picture">
+            <img class="pets__card__img" src="assets/penguins.png" alt="Penguins">
+            <div class="pets__card__overlay">
+              <p class="overlay__title">Penguins</p>
+              <p class="overlay__hobitat">Native to Antarctica</p>
+            </div>
+          </div>
+          <div class="pets__notation">
+            <div class="pets__descr">
+              <p class="pets__title">Penguins</p>
+              <p class="pets__habitat">Native to Antarctica</p>
+            </div>
+            <img class="pets__notation__icon" src="assets/meet-fish_icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="pets__btn"><a href="map.html">choose your favorite</a></button>
+  </div>
+  <div class="pick__wrapper">
+    <div class="content__wrapper">
+      <section class="pick">
+        <p class="pick__title">Pick and feed a friend</p>
+        <p class="pick__subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+        <p class="pick__descr">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PatStory.</p>
+        <p class="pick__notation">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a href="donate.html">Emergency Support Fund</a> . </p>
+        <h3 class="pick__scheme__title">How it works</h3>
+        <div class="pick__scheme">
+          <div class="pick__scheme__item">
+            <div class="scheme__img">
+              <img src="assets/pay.svg" alt="">
+            </div>
+            <p class="pick__scheme__item__title">Pay with card</p>
+          </div>
+          <div class="scheme__arrow">
+            <img src="assets/scheme-arrow.svg" alt="">
+          </div>
+          <div class="scheme__arrow_mob first">
+            <img src="assets/scheme-arrow-mob.svg" alt="">
+          </div>
+          <div class="pick__scheme__item">
+            <div class="scheme__img">
+              <img src="assets/zoo.svg" alt="">
+            </div>
+            <p class="pick__scheme__item__title">Payment goes to the zoo</p>
+          </div>
+          <div class="scheme__arrow">
+            <img src="assets/scheme-arrow.svg" alt="">
+          </div>
+          <div class="scheme__arrow_mob second">
+            <img src="assets/scheme-arrow-mob.svg" alt="">
+          </div>
+          <div class="pick__scheme__item">
+            <div class="scheme__img">
+              <img src="assets/monkey.svg" alt="">
+            </div>
+            <p class="pick__scheme__item__title">Your favourite animal gets delicious dish</p>
+          </div>
+        </div>
+        <button class="pick__btn">Feed a friend now</button>
+      </section>
+    </div>
+  </div>
+  <div class="testimonials__wrapper">
+    <div class="content__wrapper">
+      <section class="testimonials">
+        <h3 class="testimonials__title">Testimonials</h3>
+        <div class="carusel">
+        <div class="testimonials__cards">
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/user-icon.svg" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Michael John</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local Austria</li>
+                    <li>Today</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/oskar.png" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Oskar Samborsky</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local Austria</li>
+                    <li>Yesterday</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. 
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безопасную деревни, которое текст она рукописи они наш обеспечивает путь мир что если эта силуэт своих решила! Страну напоивший рекламных лучше толку, сих, всеми ведущими родного lorem свой пустился ты даже коварных пор жизни единственное. Журчит диких злых пунктуация ты!
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/fredericka.png" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Fredericka Michelin</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local Austria</li>
+                    <li>Yesterday</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/mila.png" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Mila Riksha</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local Austria</li>
+                    <li>Yesterday</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/user-icon.svg" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Alex Smith</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Unknown</li>
+                    <li>Yesterday</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">
+                Australasian salmon sardine bichir dogfish snook Lost River sucker, ocean sunfish, "oarfish lined sole," telescopefish clown loach. Burma danio: mudminnow; roughy halfbeak, coho salmon mosshead warbonnet wels catfish bramble shark yellowtail snapper ilisha pilot fish. Southern Dolly Varden brook lamprey velvet-belly shark Atlantic eel pleco spiny basslet; bala shark burrowing goby northern sea robin. Electric ray Cornish Spaktailed Bream platy: mola mola sunfish barbelless catfish emperor angelfish spiderfish sand eel lungfish grunion buffalofish. Graveldiver, golden dojo, glass knifefish wallago, lionfish Rio Grande perch starry flounder?
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/user-icon.svg" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Eva Green</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local USA</li>
+                    <li>January</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">
+                Springfish, "zingel, devil ray ricefish cusk-eel tetra, muskellunge, duckbill bass, giant danio, armoured catfish burbot," angler giant danio, "flagblenny silverside deep sea bonefish." Cod icefish escolar; northern pearleye prowfish snipefish threespine stickleback zebra oto; snook California smoothtongue beaked salmon cat shark? Cat shark. Archerfish sweeper ghost fish; sea lamprey gray mullet. Deep sea anglerfish spiny basslet steelhead pricklefish pompano dolphinfish spotted danio scup.
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/user-icon.svg" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Josh Brown</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local Germany</li>
+                    <li>February</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">
+                Shrimpfish lyretail pikehead bonefish snake mudhead tarpon x-ray tetra, "sailfish zebra turkeyfish bluefish loach minnow whitefish shrimpfish." Lyretail plunderfish airsac catfish Celebes rainbowfish hairtail rockweed gunnel mrigal, mud minnow zingel, Black scabbardfish redtooth triggerfish. Ghost knifefish woody sculpin: white croaker treefish rough pomfret, orange roughy loweye catfish Pacific albacore limia gray mullet dragon goby deepwater flathead. California halibut cuckoo wrasse smelt-whiting yellow tang silverside bangus; scissor-tail rasbora bleak armored gurnard dogfish? Yellowfin grouper deepwater cardinalfish: sea catfish pollock mud cat. Fangtooth African glass catfish: stickleback pollock Black pickerel ocean perch smelt-whiting; freshwater shark.
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/user-icon.svg" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Jimmy Goldsmith</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local Canada</li>
+                    <li>March</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">
+                Devario Razorback sucker taimen fierasfer pikeperch. Gray reef shark thorny catfish ling, smooth dogfish cownose ray. White croaker tetra scaleless black dragonfish sheepshead featherback Sacramento blackfish, Black triggerfish, leaffish scat cutlassfish Peter's elephantnose fish kappy European perch Razorback sucker spotted dogfish; sand eel mud catfish.
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/user-icon.svg" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Anonymous</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local China</li>
+                    <li>April</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">
+                South American darter shiner aholehole sand eel armoured catfish roundhead whitetip reef shark, "Black swallower mosquitofish." Sandroller, wrasse speckled trout knifejaw common carp yellowtail clownfish queen parrotfish. Houndshark Black angelfish Reedfish, Bengal danio: tilapia! Tarwhine stonecat velvet-belly shark southern Dolly Varden. Zebra loach, "shortnose chimaera spearfish." Redmouth whalefish triplespine clingfish trench flagfin flat loach bull trout pike.
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/user-icon.svg" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Valery Kipelov</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local Russia</li>
+                    <li>May</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">
+                Russian sturgeon yellow-eye mullet midshipman danio largenose fish snailfish gulper coelacanth silver dollar dwarf loach burbot swallower sawtooth eel. Knifejaw angler catfish cutthroat eel lefteye flounder warbonnet kokanee climbing gourami blacktip reef shark.
+                </p>
+            </div>
+          </div>
+          <div class="testimonials__card__bg">
+            <div class="testimonials__card">
+              <div class="testimonials__card__heder">
+                <div class="testimonials__card__icon">
+                  <img src="assets/user-icon.svg" alt="">
+                </div>
+                <div class="testimonials__card__notation">
+                  <p class="testimonials__card__title">Brother Kangaroo</p>                  
+                  <ul class="testimonials__card__subtitle">
+                    <li>Local Australia</li>
+                    <li>June</li>
+                  </ul>                  
+                </div>
+              </div>
+              <p class="testimonials__card__content">
+                Viperfish pikehead tube-snout lemon shark scissor-tail rasbora tigerperch, soapfish splitfin Atlantic trout? Black bass yellowbelly tail catfish pearl perch dragonfish Sundaland noodlefish slimy sculpin? Sleeper zebra lionfish, northern sea robin slender barracudina emperor angelfish southern flounder whale shark dartfish swordtail, warty angler char. Trumpeter ghost flathead wrasse Atlantic cod.
+                </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <input type="range" min="0" max="8" step="1" value="0" class="testimonials__progress">
+        <!-- <div class="testimonials__progress">
+          <div class="testimonials__progress__line"></div>
+        </div> -->
+        <button class="testimonials__btn">leave feedback</button>
+      </section>
+    </div>
+  </div>
+  <div class="footer__wrapper">
+    <div class="content__wrapper">
+      <footer class="footer">
+        <div class="head__items">
+          <div class="footer__logo">
+            <a href="petstory.html"><img src="assets/pet-logo.svg" alt="Logo"></a>
+          </div>
+          <div class="mobile-logo">
+            <a href="petstory.html">PetStory online</a>
+            <img class="bamboo" src="assets/bamboo.svg" alt="">
+          </div>
+          <div class="footer__subscribe">
+            <p class="subscribe__title">Subscribe to our news</p>
+            <form class="subscribe__form" action="">
+              <input class="subscribe__email" type="email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+.)+[A-z]{2,4}$" required placeholder="Enter your email">
+              <input class="subscribe__btn" type="submit" value="Submit" onclick="return false">
+            </form>
+          </div>
+        </div>
+        <button class="footer__btn"><a href="donate.html">donate for volunteers</a></button>
+        <div class="bottom__items">
+          <div class="social-links">
+            <a href="https://www.facebook.com/" class="social__link" >
+              <div class="social__icon">
+                <img src="assets/facebook.svg" alt="">
+              </div>
+              <p class="social__title">Facebook</p>
+            </a>
+            <a href="https://twitter.com/" class="social__link">
+              <div class="social__icon">
+                <img src="assets/twitter.svg" alt="">
+              </div>
+              <p class="social__title">Twitter</p>
+            </a>
+            <a href="http://instagram.com/" class="social__link">
+              <div class="social__icon">
+                <img src="assets/instagram.svg" alt="">
+              </div>
+              <p class="social__title">Instagram</p>
+            </a>
+            <a href="https://www.youtube.com/" class="social__link">
+              <div class="social__icon">
+                <img src="assets/youtube.svg" alt="">
+              </div>
+              <p class="social__title">YouTube</p>
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav__list">
+              <li class="footer__nav__item footer__nav_active"><a href="petstory.html">About</a></li>
+              <li class="footer__nav__item"><a href="map.html">Map</a></li>
+              <li class="footer__nav__item"><a href="zoos/panda.html">Zoos</a></li>
+              <li class="footer__nav__item"><a href="" onclick="return false">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="copypast">
+            <p>Designed by Alisa Samborskaya</p>
+            <p>©RSSchool & ©Yem Digital 2021</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="land.js"></script>
+</body>
+</html>
