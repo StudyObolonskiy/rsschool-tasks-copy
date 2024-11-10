@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(203, 252, 221);
+}
+.main, .train {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  min-height: 80vh;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.game {
+  background-color:rgb(203, 216, 252);
+
+  & .side-navigation {
+    background: linear-gradient(45deg, rgb(5, 130, 247) 0%, rgb(139, 1, 173) 50%, rgba(5,243,252,1) 100%);
+  }
+
+  & .main-card {
+    background: linear-gradient(180deg, rgba(139, 1, 173) 0%, rgba(255,255,255,1) 100%);
+  }
+
+
+}
